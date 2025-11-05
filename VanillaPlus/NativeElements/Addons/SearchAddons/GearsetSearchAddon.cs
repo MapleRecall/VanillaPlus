@@ -12,9 +12,10 @@ public static unsafe class GearsetSearchAddon {
         NativeController = System.NativeController,
         Size = new Vector2(275.0f, 600.0f),
         InternalName = "GearsetSearch",
-        Title = "Gearset Search",
+        Title = Strings.GearsetSearch,
         SearchOptions = [],
         SortingOptions = [ "Alphabetical", "Id" ],
+        // SortingOptions = [ Strings.Alphabetical, Strings.Id ],
     };
 
     public static void UpdateGearsets(this SearchAddon<GearsetInfo> addon, List<int>? omissionIds = null)

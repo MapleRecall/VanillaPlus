@@ -14,7 +14,7 @@ namespace VanillaPlus.Features.WindowBackground;
 public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
 
     private TabbedVerticalListNode verticalListNode;
-    
+
     private TextNode windowNameTextNode;
 
     private HorizontalListNode colorPreviewLayoutNode;
@@ -23,24 +23,24 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
     private Vector2EditWidget sizeEditWidget;
 
     private ColorPickerAddon colorPickerAddon;
-    
+
     public WindowBackgroundConfigNode() {
         CollisionNode.IsVisible = false;
-        
+
         colorPickerAddon = new ColorPickerAddon {
             NativeController = System.NativeController,
             InternalName = "WindowBackgroundColor",
-            Title = "Window Background Color Picker",
+            Title = Strings.WindowBackgroundColorPicker,
             DefaultColor = KnownColor.Black.Vector() with { W = 0.66f },
         };
-        
+
         windowNameTextNode = new TextNode {
             AlignmentType = AlignmentType.Center,
             FontSize = 18,
             IsVisible = true,
         };
         System.NativeController.AttachNode(windowNameTextNode, this);
-        
+
         verticalListNode = new TabbedVerticalListNode {
             IsVisible = true,
             ItemVerticalSpacing = 20.0f,
@@ -49,7 +49,7 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
         System.NativeController.AttachNode(verticalListNode, this);
 
         verticalListNode.AddNode(new CategoryTextNode {
-            String = "Background Color",
+            String = Strings.BackgroundColor,
         });
 
         colorPreviewLayoutNode = new HorizontalListNode {
@@ -58,14 +58,14 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
             ItemSpacing = 10.0f,
         };
         verticalListNode.AddNode(1, colorPreviewLayoutNode);
-        
+
         colorPreviewNode = new ColorPreviewNode {
             Size = new Vector2(32.0f, 32.0f),
             DrawFlags = DrawFlags.ClickableCursor,
             IsVisible = true,
         };
         colorPreviewLayoutNode.AddNode(colorPreviewNode);
-        
+
         colorLabelNode = new TextNode {
             Size = new Vector2(100.0f, 32.0f),
             AlignmentType = AlignmentType.Left,
@@ -75,14 +75,14 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
             TextColor = ColorHelper.GetColor(8),
             TextOutlineColor = ColorHelper.GetColor(7),
             TextFlags = TextFlags.Edge | TextFlags.AutoAdjustNodeSize,
-            String = "Color",
+            String = Strings.Color,
             DrawFlags = DrawFlags.ClickableCursor,
             IsVisible = true,
         };
         colorPreviewLayoutNode.AddNode(colorLabelNode);
 
         verticalListNode.AddNode(0, new CategoryTextNode {
-            String = "Padding Size",
+            String = Strings.PaddingSize,
         });
 
         sizeEditWidget = new Vector2EditWidget {
@@ -95,6 +95,8 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
                     OnConfigChanged?.Invoke(ConfigurationOption);
                 }
             },
+            XLabel = Strings.Width,
+            YLabel = Strings.Height,
         };
         verticalListNode.AddNode(1, sizeEditWidget);
 
@@ -106,7 +108,7 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
 
     protected override void OnSizeChanged() {
         base.OnSizeChanged();
-        
+
         windowNameTextNode.Size = new Vector2(Width, 24.0f);
         windowNameTextNode.Position = new Vector2(0.0f, 50.0f);
 
@@ -119,9 +121,9 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
 
     protected override void OptionChanged(WindowBackgroundSetting? option) {
         if (option is null) return;
-        
+
         windowNameTextNode.String = option.AddonName;
-        
+
         colorPreviewNode.Color = option.Color;
         colorPickerAddon.InitialColor = option.Color;
         sizeEditWidget.Value = option.Padding;
@@ -129,7 +131,7 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
 
     private void OnAddonSearchResult(StringInfoNode selectedAddon) {
         if (ConfigurationOption is null) return;
-        
+
         ConfigurationOption.AddonName = selectedAddon.Label;
         OptionChanged(ConfigurationOption);
         OnConfigChanged?.Invoke(ConfigurationOption);
@@ -143,7 +145,7 @@ public class WindowBackgroundConfigNode : ConfigNode<WindowBackgroundSetting> {
                 OnConfigChanged?.Invoke(ConfigurationOption);
             }
         };
-                
+
         colorPickerAddon.Toggle();
     }
 }

@@ -12,7 +12,7 @@ public class PartyFinderPresetConfigNode : ConfigNode<PresetInfo> {
 
     public PartyFinderPresetConfigNode() {
         renameCategoryNode = new CategoryTextNode {
-            String = "Input new name",
+            String = Strings.InputNewName,
         };
         System.NativeController.AttachNode(renameCategoryNode, this);
 
@@ -23,7 +23,7 @@ public class PartyFinderPresetConfigNode : ConfigNode<PresetInfo> {
         System.NativeController.AttachNode(renameInputNode, this);
 
         confirmButtonNode = new TextButtonNode {
-            String = "Apply",
+            String = Strings.Apply,
             IsVisible = true,
             OnClick = () => {
                 if (ConfigurationOption is not null && !renameInputNode.IsError) {

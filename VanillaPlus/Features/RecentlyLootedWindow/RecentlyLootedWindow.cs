@@ -13,9 +13,8 @@ namespace VanillaPlus.Features.RecentlyLootedWindow;
 
 public unsafe class RecentlyLootedWindow : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Recently Looted Items Window",
-        Description = "Adds a window that shows a scrollable list of all items that you have looted this session.\n\n" +
-                      "Can only show items looted after this feature is enabled.",
+        DisplayName = Strings.RecentlyLootedWindow,
+        Description = Strings.RecentlyLootedWindowDescription,
         Type = ModificationType.NewWindow,
         Authors = ["MidoriKami"],
         ChangeLog = [
@@ -40,7 +39,7 @@ public unsafe class RecentlyLootedWindow : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(250.0f, 350.0f),
             InternalName = "RecentlyLooted",
-            Title = "Recently Looted Items",
+            Title = Strings.RecentlyLootedItems,
             OpenCommand = "/recentloot",
             UpdateListFunction = UpdateList,
         };

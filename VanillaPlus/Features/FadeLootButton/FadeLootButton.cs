@@ -9,8 +9,8 @@ namespace VanillaPlus.Features.FadeLootButton;
 
 public unsafe class FadeLootButton : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Fade Loot Button",
-        Description = "Fades the Loot button if you've already rolled on everything available.",
+        DisplayName = Strings.FadeLootButton,
+        Description = Strings.FadeLootButtonDescription,
         Type = ModificationType.UserInterface,
         Authors = [ "MidoriKami" ],
         ChangeLog = [
@@ -31,7 +31,7 @@ public unsafe class FadeLootButton : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(400.0f, 125.0f),
             InternalName = "FadeLootConfig",
-            Title = "Fade Loot Button Config",
+            Title = Strings.FadeLootButtonConfig,
             Config = config,
         };
 

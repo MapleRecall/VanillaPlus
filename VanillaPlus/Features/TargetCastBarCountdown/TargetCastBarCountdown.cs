@@ -16,8 +16,8 @@ namespace VanillaPlus.Features.TargetCastBarCountdown;
 
 public unsafe class TargetCastBarCountdown : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Target Cast Bar Countdown",
-        Description = "Adds the time remaining for your targets current cast to the cast bar.",
+        DisplayName = Strings.TargetCastBarCountdown,
+        Description = Strings.TargetCastBarCountdownDescription,
         Authors = ["MidoriKami"],
         Type = ModificationType.UserInterface,
         ChangeLog = [
@@ -49,29 +49,29 @@ public unsafe class TargetCastBarCountdown : GameModification {
         config = TargetCastBarCountdownConfig.Load();
         configWindow = new ConfigAddon {
             NativeController = System.NativeController,
-            InternalName = "TargetCastBarConfig",
-            Title = "Target Castbar Countdown Config",
+            InternalName = "TargetCastBarCountdownConfig",
+            Title = Strings.TargetCastBarCountdownConfig,
             Config = config,
         };
 
-        configWindow.AddCategory("Toggles")
-            .AddCheckbox("Show on Primary Target Castbar", nameof(config.PrimaryTarget))
-            .AddCheckbox("Show on Focus Target Castbar", nameof(config.FocusTarget))
-            .AddCheckbox("Show on Nameplate Target Castbar", nameof(config.NamePlateTargets));
+        configWindow.AddCategory(Strings.Toggles)
+            .AddCheckbox(Strings.ShowOnPrimaryTargetCastbar, nameof(config.PrimaryTarget))
+            .AddCheckbox(Strings.ShowOnFocusTargetCastbar, nameof(config.FocusTarget))
+            .AddCheckbox(Strings.ShowOnNameplateTargetCastbar, nameof(config.NamePlateTargets));
 
         const NodeConfigEnum nodeConfigOptions = NodeConfigEnum.TextColor | NodeConfigEnum.Position | NodeConfigEnum.TextSize | 
                                                  NodeConfigEnum.TextFont | NodeConfigEnum.TextAlignment | NodeConfigEnum.TextOutlineColor;
 
-        configWindow.AddCategory("Target Castbar Style (Combined)")
+        configWindow.AddCategory(Strings.TargetCastBarStyleCombined)
             .AddTextNodeConfig(PrimaryTargetAltStylePath, nodeConfigOptions);
 
-        configWindow.AddCategory("Target Castbar Style (Separate)")
+        configWindow.AddCategory(Strings.TargetCastBarStyleSeparate)
             .AddTextNodeConfig(PrimaryTargetStylePath, nodeConfigOptions);
         
-        configWindow.AddCategory("Focus Target Castbar Style")
+        configWindow.AddCategory(Strings.FocusTargetCastBarStyle)
             .AddTextNodeConfig(FocusTargetStylePath, nodeConfigOptions);
         
-        configWindow.AddCategory("Nameplate Castbar Style")
+        configWindow.AddCategory(Strings.NameplateCastBarStyle)
             .AddTextNodeConfig(CastBarEnemyStylePath, nodeConfigOptions);
 
         config.OnSave += () => {

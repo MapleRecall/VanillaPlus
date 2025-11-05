@@ -14,9 +14,8 @@ namespace VanillaPlus.Features.FadeUnavailableActions;
 
 public unsafe class FadeUnavailableActions : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Fade Unavailable Actions",
-        Description = "Fades hotbar slots when the action is not able to be cast due to missing resources, out of range, or just on cooldown.\n\n" +
-                      "Additionally fades actions that are not available because you are sync'd down.",
+        DisplayName = Strings.FadeUnavailableActions,
+        Description = Strings.FadeUnavailableActionsDescription,
         Authors = ["MidoriKami"],
         Type = ModificationType.UserInterface,
         ChangeLog = [
@@ -42,18 +41,18 @@ public unsafe class FadeUnavailableActions : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(400.0f, 250.0f),
             InternalName = "FadeUnavailableConfig",
-            Title = "Fade Unavailable Actions Config",
+            Title = Strings.FadeUnavailableActionsConfig,
             Config = config,
         };
 
-        configWindow.AddCategory("Style Settings")
-            .AddIntSlider("Fade Percentage", 0, 90, nameof(config.FadePercentage))
-            .AddIntSlider("Redden Percentage", 5, 100,  nameof(config.ReddenPercentage));
+        configWindow.AddCategory(Strings.StyleSettings)
+            .AddIntSlider(Strings.FadePercentage, 0, 90, nameof(config.FadePercentage))
+            .AddIntSlider(Strings.ReddenPercentage, 5, 100,  nameof(config.ReddenPercentage));
 
-        configWindow.AddCategory("Feature Toggles")
-            .AddCheckbox("Apply Transparency to Frame", nameof(config.ApplyToFrame))
-            .AddCheckbox("Apply Only to Sync'd Actions", nameof(config.ApplyToSyncActions))
-            .AddCheckbox("Redden Skills out of Range", nameof(config.ReddenOutOfRange));
+        configWindow.AddCategory(Strings.FeatureToggles)
+            .AddCheckbox(Strings.ApplyTransparencyToFrame, nameof(config.ApplyToFrame))
+            .AddCheckbox(Strings.ApplyOnlyToSyncedActions, nameof(config.ApplyToSyncActions))
+            .AddCheckbox(Strings.ReddenSkillsOutOfRange, nameof(config.ReddenOutOfRange));
         
         OpenConfigAction = configWindow.Toggle;
 

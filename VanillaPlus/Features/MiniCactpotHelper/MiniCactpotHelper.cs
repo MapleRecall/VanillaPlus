@@ -15,8 +15,8 @@ namespace VanillaPlus.Features.MiniCactpotHelper;
 
 public unsafe class MiniCactpotHelper : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Mini Cactpot Helper",
-        Description = "Indicates which Mini Cactpot spots you should reveal next.",
+        DisplayName = Strings.MiniCactpotHelper,
+        Description = Strings.MiniCactpotHelperDescription,
         Authors = ["MidoriKami"],
         Type = ModificationType.UserInterface,
         ChangeLog = [
@@ -48,17 +48,17 @@ public unsafe class MiniCactpotHelper : GameModification {
         configWindow = new ConfigAddon {
             NativeController = System.NativeController,
             InternalName = "MiniCactpotConfig",
-            Title = "Mini Cactpot Helper Config",
+            Title = Strings.MiniCactpotHelperConfig,
             Config = config,
         };
 
-        configWindow.AddCategory("Animations")
-            .AddCheckbox("Enable Animations", nameof(config.EnableAnimations));
+        configWindow.AddCategory(Strings.Animations)
+            .AddCheckbox(Strings.EnableAnimations, nameof(config.EnableAnimations));
 
-        configWindow.AddCategory("Icon")
+        configWindow.AddCategory(Strings.Icon)
             .AddMultiSelectIcon("Icon", nameof(config.IconId), true, 61332, 90452, 234008);
 
-        configWindow.AddCategory("Colors")
+        configWindow.AddCategory(Strings.Colors)
             .AddColorEdit("Button", nameof(config.ButtonColor), KnownColor.White.Vector() with { W = 0.8f })
             .AddColorEdit("Lane", nameof(config.LaneColor), KnownColor.White.Vector());
 

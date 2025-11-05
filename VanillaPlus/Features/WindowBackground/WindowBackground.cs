@@ -9,9 +9,8 @@ namespace VanillaPlus.Features.WindowBackground;
 
 public unsafe class WindowBackground : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Window Backgrounds",
-        Description = "Allows you to add a background to any native window.\n\n" +
-                      "Examples: Cast Bar, Target Health Bar, Inventory Widget, Todo List.",
+        DisplayName = Strings.WindowBackgrounds,
+        Description = Strings.WindowBackgroundsDescription,
         Authors = ["MidoriKami"],
         Type = ModificationType.UserInterface,
         ChangeLog = [
@@ -36,9 +35,10 @@ public unsafe class WindowBackground : GameModification {
         addonSearchAddon = new SearchAddon<StringInfoNode> {
             NativeController = System.NativeController,
             InternalName = "AddonSearch",
-            Title = "Window Search",
+            Title = Strings.WindowSearch,
             Size = new Vector2(350.0f, 600.0f),
-            SortingOptions = [ "Visibility", "Alphabetical" ],
+            // SortingOptions = [ "Visibility", "Alphabetical" ],
+            SortingOptions = [ Strings.Visibility, Strings.Alphabetical ],
             SearchOptions = GetOptions(),
         };
 
@@ -47,7 +47,7 @@ public unsafe class WindowBackground : GameModification {
         configWindow = new ListConfigAddon<WindowBackgroundSetting, WindowBackgroundConfigNode> {
             NativeController = System.NativeController,
             InternalName = "WindowBackgroundConfig",
-            Title = "Window Backgrounds Config",
+            Title = Strings.WindowBackgroundsConfig,
             Size = new Vector2(600.0f, 500.0f),
             Options = config.Settings,
 

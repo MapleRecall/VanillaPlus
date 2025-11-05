@@ -33,13 +33,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
             Size = new Vector2(ContentSize.X, 150.0f),
             LineSpacing = 16,
             TextFlags = TextFlags.MultiLine,
-            String = "Use the text box below to define how you want the text to be formatted.\n" +
-                     "Use symbols {0} {1} {2} {3} {4} where you want the following values to be in the string\n\n" +
-                     "{0} - Region (Ex. The Northern Empty)\n" +
-                     "{1} - Territory (Ex. Old Sharlayan)\n" +
-                     "{2} - Area (Ex. Archons Design)\n" +
-                     "{3} - Sub-Area (Ex. Old Sharlayan Aetheryte Plaza)\n" +
-                     "{4} - Housing Ward (Ex. Ward 14)",
+            String = Strings.LocationFormatInstruction,
         };
         AttachNode(instructionTextNode);
 
@@ -52,7 +46,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
 
         entryLabelNode = new TextNode {
             Size = new Vector2(125.0f, 30.0f),
-            String = "Info Bar Entry",
+            String = Strings.InfoBarEntry,
             AlignmentType = AlignmentType.Left,
             IsVisible = true,
         };
@@ -77,7 +71,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
 
         resetEntryButtonNode = new TextButtonNode {
             Size = new Vector2(125.0f, 30.0f),
-            String = "Reset to Default",
+            String = Strings.ResetToDefault,
             IsVisible = true,
             OnClick = () => {
                 entryInputNode.IsError = false;
@@ -97,7 +91,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
 
         tooltipLabelNode = new TextNode {
             Size = new Vector2(125.0f, 30.0f),
-            String = "Info Bar Tooltip",
+            String = Strings.InfoBarTooltip,
             AlignmentType = AlignmentType.Left,
             IsVisible = true,
         };
@@ -122,7 +116,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
 
         tooltipResetButtonNode = new TextButtonNode {
             Size = new Vector2(125.0f, 30.0f),
-            String = "Reset to Default",
+            String = Strings.ResetToDefault,
             IsVisible = true,
             OnClick = () => {
                 tooltipInputNode.IsError = false;
@@ -136,7 +130,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
         showInstanceNumberNode = new CheckboxNode {
             Size = new Vector2(ContentSize.X, 24.0f),
             Position = new Vector2(ContentStartPosition.X, infoBarTooltipLayoutNode.Y + infoBarTooltipLayoutNode.Height + 15.0f),
-            String = "Show Instance Number",
+            String = Strings.ShowInstanceNumber,
             IsVisible = true,
             IsChecked = Config.ShowInstanceNumber,
             OnClick = newValue => {
@@ -149,7 +143,7 @@ public class LocationDisplayConfigAddon : NativeAddon {
         showPreciseHousingLocationNode = new CheckboxNode {
             Size = new Vector2(ContentSize.X, 24.0f),
             Position = new Vector2(ContentStartPosition.X, showInstanceNumberNode.Y + showInstanceNumberNode.Height),
-            String = "Show Precise Housing Location",
+            String = Strings.ShowPreciseHousingLocation,
             IsVisible = true,
             IsChecked = Config.UsePreciseHousingLocation,
             OnClick = newValue => {

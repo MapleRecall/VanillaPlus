@@ -7,10 +7,10 @@ using VanillaPlus.NativeElements.Config;
 
 namespace VanillaPlus.Features.SuppressDialogAdvance;
 
-public unsafe class SuppressDialogueAdvance : GameModification {
+public unsafe class SuppressDialogAdvance : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Suppress Dialogue Advance",
-        Description = "Prevents advancing a cutscene dialogue, unless you click on the dialogue box itself.",
+        DisplayName = Strings.SuppressDialogAdvance,
+        Description = Strings.SuppressDialogAdvanceDescription,
         Type = ModificationType.GameBehavior,
         Authors = [ "MidoriKami" ],
         ChangeLog = [
@@ -28,12 +28,12 @@ public unsafe class SuppressDialogueAdvance : GameModification {
         configWindow = new ConfigAddon {
             NativeController = System.NativeController,
             InternalName = "SuppressDialogAdvanceConfig",
-            Title = "Suppress Dialog Advance Config",
+            Title = Strings.SuppressDialogAdvanceConfig,
             Config = config,
         };
         
-        configWindow.AddCategory("General")
-            .AddCheckbox("Apply only in Cutscenes", nameof(config.ApplyOnlyInCutscenes));
+        configWindow.AddCategory(Strings.General)
+            .AddCheckbox(Strings.ApplyOnlyInCutscenes, nameof(config.ApplyOnlyInCutscenes));
 
         OpenConfigAction = configWindow.Toggle;
         

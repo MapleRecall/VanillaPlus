@@ -1,0 +1,914 @@
+﻿{
+    "PluginTitle": {
+        "message": "Vanilla Plus 配置窗口"
+    },
+    "OpenModificationBrowser": {
+        "message": "打开配置窗口"
+    },
+    "WindowSystemName": {
+        "message": "VanillaPlus"
+    },
+    "ChangelogBrowserTitle": {
+        "message": "Vanilla Plus 更新日志浏览器"
+    },
+    "PleaseSelectOption": {
+        "message": "请在左侧选择一个选项"
+    },
+    "Changelog": {
+        "message": "更新日志"
+    },
+    "FailedToLoadDisabled": {
+        "message": "加载失败，此模块已被禁用"
+    },
+    "ExperimentalWarning": {
+        "message": "注意：此功能为实验性功能。\n可能包含错误或导致游戏崩溃。"
+    },
+    "RetryCompatibilityCheck": {
+        "message": "重试兼容性检查"
+    },
+    "OpenConfigurationWindow": {
+        "message": "打开配置窗口"
+    },
+    "NoOptionSelected": {
+        "message": "未选择选项"
+    },
+    "WindowNotSet": {
+        "message": "未设置窗口"
+    },
+    "BackgroundColor": {
+        "message": "背景颜色"
+    },
+    "Color": {
+        "message": "颜色"
+    },
+    "PaddingSize": {
+        "message": "边距大小"
+    },
+    "Keybind": {
+        "message": "快捷键"
+    },
+    "ChangeKeybind": {
+        "message": "更改快捷键"
+    },
+    "WindowSize": {
+        "message": "窗口大小"
+    },
+    "Width": {
+        "message": "宽度"
+    },
+    "Height": {
+        "message": "高度"
+    },
+    "ChangesWontTakeEffect": {
+        "message": "更改需要重新打开窗口才能生效"
+    },
+    "Disable": {
+        "message": "禁用"
+    },
+    "Enable": {
+        "message": "启用"
+    },
+    "KeybindConfigWindow": {
+        "message": "快捷键配置窗口"
+    },
+    "ColorPickerWindow": {
+        "message": "颜色选择器窗口"
+    },
+    "ColorPicker": {
+        "message": "颜色选择器"
+    },
+    "TextColor": {
+        "message": "文本颜色"
+    },
+    "TextOutline": {
+        "message": "文本描边"
+    },
+    "FontSize": {
+        "message": "字体大小"
+    },
+    "Font": {
+        "message": "字体"
+    },
+    "Alignment": {
+        "message": "对齐方式"
+    },
+    "SearchPlaceholder": {
+        "message": "搜索 . . ."
+    },
+    "SupportsRegexSearch": {
+        "message": "[VanillaPlus]: 支持正则表达式搜索"
+    },
+    "StartInputWithDollar": {
+        "message": "以 '$' 开头可按描述搜索"
+    },
+    "CurrencyOverlay": {
+        "message": "货币叠加层"
+    },
+    "CurrencyOverlayDescription": {
+        "message": "允许您在UI叠加层中添加额外的货币显示。\n\n还可以设置最小值和最大值来触发警告提示。"
+    },
+    "CurrencyOverlayConfig": {
+        "message": "货币叠加层配置"
+    },
+    "ItemSearch": {
+        "message": "物品搜索"
+    },
+    "WarnWhenBelowLimit": {
+        "message": "低于限制时警告"
+    },
+    "WarnWhenAboveLimit": {
+        "message": "超过限制时警告"
+    },
+    "ReverseIconPosition": {
+        "message": "反转图标位置"
+    },
+    "EnableMovingOverlayElement": {
+        "message": "允许移动叠加层元素"
+    },
+    "Scale": {
+        "message": "缩放"
+    },
+    "WindowBackgroundColorPicker": {
+        "message": "窗口背景颜色选择器"
+    },
+    "WondrousTailsProbabilities": {
+        "message": "库洛的奇谈书概率"
+    },
+    "WondrousTailsProbabilitiesDescription": {
+        "message": "在库洛的奇谈书中显示当前连线概率和平均重新洗牌概率。"
+    },
+    "LineChances": {
+        "message": "连线概率: "
+    },
+    "ShuffleAverage": {
+        "message": "洗牌平均: "
+    },
+    "Alphabetical": {
+        "message": "按字母排序"
+    },
+    "Id": {
+        "message": "按ID排序"
+    },
+    "WindowBackgrounds": {
+        "message": "窗口背景"
+    },
+    "WindowBackgroundsDescription": {
+        "message": "允许您为任何原生窗口添加背景。\n\n例如：咏唱条、目标血条、道具栏小工具、待办事项列表。"
+    },
+    "TargetCastBarCountdown": {
+        "message": "目标读条倒计时"
+    },
+    "TargetCastBarCountdownDescription": {
+        "message": "在目标读条上添加剩余咏唱时间显示。"
+    },
+    "TargetCastBarCountdownConfig": {
+        "message": "目标读条倒计时配置"
+    },
+    "ShowOnPrimaryTargetCastbar": {
+        "message": "在主目标读条上显示"
+    },
+    "ShowOnFocusTargetCastbar": {
+        "message": "在焦点目标读条上显示"
+    },
+    "ShowOnNameplateTargetCastbar": {
+        "message": "在名牌目标读条上显示"
+    },
+    "SuppressDialogAdvance": {
+        "message": "阻止对话推进"
+    },
+    "SuppressDialogAdvanceDescription": {
+        "message": "阻止自动推进过场对话，除非您直接点击对话框本身。"
+    },
+    "SuppressDialogAdvanceConfig": {
+        "message": "阻止对话推进配置"
+    },
+    "ApplyOnlyInCutscenes": {
+        "message": "仅在过场动画中应用"
+    },
+    "StickyShopCategories": {
+        "message": "商店分类固定"
+    },
+    "StickyShopCategoriesDescription": {
+        "message": "记住特定商人、雇员市场、大国防联军军需官等的选定分类和子分类。"
+    },
+    "SkipTeleportConfirm": {
+        "message": "跳过传送确认"
+    },
+    "SkipTeleportConfirmDescription": {
+        "message": "使用地图传送时跳过'传送到[地点]，费用[金额]金币？'的确认弹窗。"
+    },
+    "SaddlebagSearchBar": {
+        "message": "陆行鸟鞍囊搜索栏"
+    },
+    "SaddlebagSearchBarDescription": {
+        "message": "为陆行鸟鞍囊窗口添加搜索栏。"
+    },
+    "RetainerSearchBar": {
+        "message": "雇员搜索栏"
+    },
+    "RetainerSearchBarDescription": {
+        "message": "为雇员窗口添加搜索栏。"
+    },
+    "ResetInventoryTab": {
+        "message": "重置道具栏标签"
+    },
+    "ResetInventoryTabDescription": {
+        "message": "打开时自动将道具栏重置到第一个标签页。"
+    },
+    "QuestListWindow": {
+        "message": "任务列表窗口"
+    },
+    "QuestListWindowDescription": {
+        "message": "显示当前所在区域所有可接任务的列表。"
+    },
+    "PetSizeContextMenu": {
+        "message": "宠物大小右键菜单"
+    },
+    "PetSizeContextMenuDescription": {
+        "message": "右键点击宠物或拥有宠物的玩家时，显示更改宠物大小的右键菜单选项"
+    },
+    "PartyFinderPresets": {
+        "message": "队伍招募预设"
+    },
+    "PartyFinderPresetsDescription": {
+        "message": "允许您保存和使用队伍招募窗口的预设"
+    },
+    "OpenGlamourDresserToCurrentJob": {
+        "message": "幻化柜自动切换职业"
+    },
+    "OpenGlamourDresserToCurrentJobDescription": {
+        "message": "打开幻化柜时，将自动选择您当前职业的标签页。"
+    },
+    "MissingJobStoneLockout": {
+        "message": "缺失灵魂水晶锁定"
+    },
+    "MissingJobStoneLockoutDescription": {
+        "message": "当您缺少灵魂水晶时阻止排队进入任务。"
+    },
+    "MiniCactpotHelper": {
+        "message": "仙人微彩助手"
+    },
+    "MiniCactpotHelperDescription": {
+        "message": "提示您在仙人微彩中下一步应该翻开哪个位置。"
+    },
+    "MiniCactpotHelperConfig": {
+        "message": "仙人微彩助手配置"
+    },
+    "EnableAnimations": {
+        "message": "启用动画"
+    },
+    "MacroTooltips": {
+        "message": "宏命令工具提示"
+    },
+    "MacroTooltipsDescription": {
+        "message": "在鼠标悬停在使用'/macroicon'设置为'action'的宏上时显示技能工具提示"
+    },
+    "MacroLineNumbers": {
+        "message": "宏命令行号"
+    },
+    "MacroLineNumbersDescription": {
+        "message": "为用户宏窗口添加行号。"
+    },
+    "InventorySearchBar": {
+        "message": "道具栏搜索栏"
+    },
+    "InventorySearchBarDescription": {
+        "message": "为道具栏窗口添加搜索栏。"
+    },
+    "ArmourySearchBar": {
+        "message": "兵装库搜索栏"
+    },
+    "ArmourySearchBarDescription": {
+        "message": "为兵装库窗口添加搜索栏。"
+    },
+    "LocationDisplay": {
+        "message": "位置显示"
+    },
+    "LocationDisplayDescription": {
+        "message": "在服务器信息栏中显示您当前的位置。"
+    },
+    "LocationDisplayConfig": {
+        "message": "位置显示配置"
+    },
+    "Ward": {
+        "message": "{0}区"
+    },
+    "Subdivision": {
+        "message": "扩建区"
+    },
+    "Apartment": {
+        "message": "公寓"
+    },
+    "Lobby": {
+        "message": "大厅"
+    },
+    "Plot": {
+        "message": "{0}号地"
+    },
+    "Room": {
+        "message": "{0}号房"
+    },
+    "LocationFormatInstruction": {
+        "message": "使用下方文本框定义文本格式。\n使用符号 {0} {1} {2} {3} {4} 表示以下信息在字符串中的位置：\n\n{0} - 区域（例如：北洋空域）\n{1} - 地域（例如：旧萨雷安）\n{2} - 地区（例如：贤人设计院）\n{3} - 子地区（例如：旧萨雷安都市传送点广场）\n{4} - 住宅区（例如：14区）"
+    },
+    "InfoBarEntry": {
+        "message": "信息栏条目"
+    },
+    "InfoBarTooltip": {
+        "message": "信息栏提示"
+    },
+    "ResetToDefault": {
+        "message": "重置为默认"
+    },
+    "ShowInstanceNumber": {
+        "message": "显示副本编号"
+    },
+    "ShowPreciseHousingLocation": {
+        "message": "显示精确住宅位置"
+    },
+    "HUDCoordinates": {
+        "message": "HUD坐标"
+    },
+    "HUDCoordinatesDescription": {
+        "message": "在HUD布局节点中显示坐标位置，让您能够完美精确地调整定位。\n\n显示HUD元素中心的坐标。"
+    },
+    "FateListWindow": {
+        "message": "危命任务列表窗口"
+    },
+    "FateListWindowDescription": {
+        "message": "显示当前区域内所有当前活跃的危命任务列表"
+    },
+    "FateList": {
+        "message": "危命任务列表"
+    },
+    "UnknownLevel": {
+        "message": "等级 ???"
+    },
+    "DutyTimer": {
+        "message": "任务计时器"
+    },
+    "DutyTimerDescription": {
+        "message": "完成任务时，在聊天窗口中打印任务所用时间。"
+    },
+    "DutyCompletedIn": {
+        "message": "任务完成时间"
+    },
+    "ListInventory": {
+        "message": "背包列表窗口"
+    },
+    "ListInventoryDescription": {
+        "message": "添加一个窗口，以列表形式显示您的道具栏，并带有可切换的过滤器。"
+    },
+    "InventoryList": {
+        "message": "背包列表"
+    },
+    "GearsetRedirect": {
+        "message": "套装重定向"
+    },
+    "GearsetRedirectDescription": {
+        "message": "装备套装时，根据您所在区域设置加载替代套装。"
+    },
+    "GearsetRedirectConfig": {
+        "message": "套装重定向配置"
+    },
+    "ClearFlag": {
+        "message": "清除标记"
+    },
+    "ClearFlagDescription": {
+        "message": "允许您右键点击小地图来清除当前设置的标旗标记。"
+    },
+    "FasterScroll": {
+        "message": "快速滚动条"
+    },
+    "FasterScrollDescription": {
+        "message": "提高所有滚动条的速度。"
+    },
+    "FasterScrollConfig": {
+        "message": "快速滚动条配置"
+    },
+    "ResourceBarPercentages": {
+        "message": "显示资源条百分比"
+    },
+    "ResourceBarPercentagesDescription": {
+        "message": "将体力、魔力、采集力和制作力条显示为百分比而非原始数值。"
+    },
+    "ResourceBarPercentagesConfig": {
+        "message": "资源条百分比配置"
+    },
+    "FadeLootButton": {
+        "message": "淡化拾取按钮"
+    },
+    "FadeLootButtonDescription": {
+        "message": "如果您已对所有可用战利品投过骰子，则淡化拾取按钮。"
+    },
+    "FadeLootButtonConfig": {
+        "message": "淡化拾取按钮配置"
+    },
+    "FadeUnavailableActions": {
+        "message": "淡化不可用技能"
+    },
+    "FadeUnavailableActionsDescription": {
+        "message": "当技能因资源不足、超出范围或只是冷却中而无法施放时，淡化热键栏槽位。\n\n还会淡化因等级同步而无法使用的技能。"
+    },
+    "FadeUnavailableActionsConfig": {
+        "message": "淡化不可用技能配置"
+    },
+    "FadePercentage": {
+        "message": "淡化百分比"
+    },
+    "ReddenPercentage": {
+        "message": "变红百分比"
+    },
+    "ApplyTransparencyToFrame": {
+        "message": "将透明度应用到边框"
+    },
+    "ApplyOnlyToSyncedActions": {
+        "message": "仅应用到同步技能"
+    },
+    "ReddenSkillsOutOfRange": {
+        "message": "超出范围的技能变红"
+    },
+    "BetterCursor": {
+        "message": "增强光标"
+    },
+    "BetterCursorDescription": {
+        "message": "在光标周围绘制一个环来让其更容易看到"
+    },
+    "BetterCursorConfig": {
+        "message": "增强光标配置"
+    },
+    "EnableAnimation": {
+        "message": "启用动画"
+    },
+    "HideOnLeftHoldOrRightHold": {
+        "message": "左键或右键按住时隐藏"
+    },
+    "OnlyShowInCombat": {
+        "message": "仅在战斗中显示"
+    },
+    "OnlyShowInDuties": {
+        "message": "仅在副本中显示"
+    },
+    "FastMouseClick": {
+        "message": "快速鼠标点击"
+    },
+    "FastMouseClickDescription": {
+        "message": "游戏在检测到双击时不会触发单击的UI事件。\n\n此修改通过在触发双击的同时始终触发普通鼠标单击来解决这个问题。"
+    },
+    "SelectNextLootItem": {
+        "message": "自动选择下一个战利品物品"
+    },
+    "SelectNextLootItemDescription": {
+        "message": "点击需求、贪婪或放弃后自动跳转到下一个战利品物品。\n\n注意：此修改不会自动投骰战利品。"
+    },
+    "ClearTextInputs": {
+        "message": "清除文本输入"
+    },
+    "ClearTextInputsDescription": {
+        "message": "允许您通过右键点击文本输入框来清除其中的文本。"
+    },
+    "ClearSelectedDuties": {
+        "message": "清除选定任务"
+    },
+    "ClearSelectedDutiesDescription": {
+        "message": "打开任务搜索器时，取消选择任何已选择的任务。"
+    },
+    "ClearSelectedDutiesConfig": {
+        "message": "清除选定任务配置"
+    },
+    "DisableWhenUnrestricted": {
+        "message": "解除限制时禁用"
+    },
+    "HUDPresets": {
+        "message": "HUD预设"
+    },
+    "HUDPresetsDescription": {
+        "message": "提供可快速应用的预设HUD布局。"
+    },
+    "HUDPresetName": {
+        "message": "HUD预设名称"
+    },
+    "VanillaPlusHUDPresets": {
+        "message": "[VanillaPlus] HUD预设"
+    },
+    "SelectHUDLayoutPreset": {
+        "message": "选择HUD布局预设"
+    },
+    "Load": {
+        "message": "加载"
+    },
+    "LoadSelectedPreset": {
+        "message": "加载所选预设"
+    },
+    "Overwrite": {
+        "message": "覆盖"
+    },
+    "OverwriteSelectedPreset": {
+        "message": "覆盖所选预设"
+    },
+    "Delete": {
+        "message": "删除"
+    },
+    "WorkInProgressDeletePreset": {
+        "message": "开发中\n现在请手动删除预设文件"
+    },
+    "Save": {
+        "message": "保存"
+    },
+    "ClickSaveAboveFirst": {
+        "message": "保存新预设前请先点击上方保存"
+    },
+    "SaveCurrentUIAsNewPreset": {
+        "message": "将当前UI保存为新预设"
+    },
+    "NewPresetName": {
+        "message": "新预设名称"
+    },
+    "HideUnwantedBanners": {
+        "message": "隐藏不需要的横幅"
+    },
+    "HideUnwantedBannersDescription": {
+        "message": "阻止大型文字横幅的出现及其音效播放。"
+    },
+    "HideUnwantedBannersConfig": {
+        "message": "隐藏不需要横幅配置"
+    },
+    "HideGuildhestObjectivePopup": {
+        "message": "隐藏行会令目标弹窗"
+    },
+    "HideGuildhestObjectivePopupDescription": {
+        "message": "在开始行会令时，此修改将阻止包含行会令说明的弹出窗口。\n\n您仍将收到包含行会令说明的聊天消息。"
+    },
+    "BetterQuestMapLink": {
+        "message": "增强任务地图链接"
+    },
+    "BetterQuestMapLinkDescription": {
+        "message": "点击任务链接时，直接打开任务对应的具体地图，而非通用世界地图。"
+    },
+    "EnhancedLootWindow": {
+        "message": "增强拾取窗口"
+    },
+    "EnhancedLootWindowDescription": {
+        "message": "为拾取窗口物品添加指示器，显示您是否已解锁该物品，或物品是否可获得。"
+    },
+    "EnhancedLootWindowConfig": {
+        "message": "增强拾取窗口配置"
+    },
+    "MarkUnobtainableItems": {
+        "message": "标记无法获得的物品"
+    },
+    "MarkAlreadyUnlockedItems": {
+        "message": "标记已解锁的物品"
+    },
+    "RecentlyLootedWindowDescription": {
+        "message": "添加一个窗口，显示本次登录期间您拾取的所有物品的可滚动列表。\n\n存在过滤器来帮助您区分您要寻找的物品类型。"
+    },
+    "InstancedWaymarks": {
+        "message": "副本场景标记"
+    },
+    "InstancedWaymarksDescription": {
+        "message": "为每个任务启用所有已保存的场景标记槽位，而不是在所有任务间共享它们，并可以为每个槽位命名。"
+    },
+    "HideMpBars": {
+        "message": "隐藏魔力条"
+    },
+    "HideMpBarsDescription": {
+        "message": "在小队列表中隐藏不使用魔力的职业的魔力条。"
+    },
+    "ForcedCutsceneSounds": {
+        "message": "强制过场音效"
+    },
+    "ForcedCutsceneSoundsDescription": {
+        "message": "在过场动画中自动取消选定音频通道的静音。"
+    },
+    "ForcedCutsceneSoundsConfig": {
+        "message": "强制过场音效配置"
+    },
+    "RestoreMuteStateAfterCutscene": {
+        "message": "过场动画后恢复静音状态"
+    },
+    "UnmuteMasterVolume": {
+        "message": "取消静音主音量"
+    },
+    "UnmuteBGM": {
+        "message": "取消静音背景音乐"
+    },
+    "UnmuteSoundEffects": {
+        "message": "取消静音音效"
+    },
+    "UnmuteVoice": {
+        "message": "取消静音语音"
+    },
+    "UnmuteAmbientSounds": {
+        "message": "取消静音环境音"
+    },
+    "UnmuteSystemSounds": {
+        "message": "取消静音系统音"
+    },
+    "UnmutePerformance": {
+        "message": "取消静音演奏"
+    },
+    "DisableInMSQRoulette": {
+        "message": "在主线任务随机本中禁用"
+    },
+    "FocusTargetLock": {
+        "message": "焦点目标锁定"
+    },
+    "FocusTargetLockDescription": {
+        "message": "当任务重新开始时，恢复您之前的焦点目标。"
+    },
+    "DraggableWindowDeadSpace": {
+        "message": "窗口空白拖拽"
+    },
+    "DraggableWindowDeadSpaceDescription": {
+        "message": "允许点击并拖动窗口空白区域来移动窗口。"
+    },
+    "CastBarAetheryteNames": {
+        "message": "读条显示以太之光名称"
+    },
+    "CastBarAetheryteNamesDescription": {
+        "message": "用您的目的地以太之光名称替换'传送'技能的名称。"
+    },
+    "BetterInterruptableCastBars": {
+        "message": "增强可打断读条"
+    },
+    "BetterInterruptableCastBarsDescription": {
+        "message": "使敌方可打断读条更加醒目。\n\n此外，可以打断该咏唱的技能会在您的热键栏上显示指示。"
+    },
+    "MissingJobStone": {
+        "message": "缺失灵魂水晶"
+    },
+    "ClickToDisableLock": {
+        "message": "点击禁用锁定"
+    },
+    "ClicksRemaining": {
+        "message": "剩余点击次数"
+    },
+    "PartyFinderPreset": {
+        "message": "队伍招募预设"
+    },
+    "SavePreset": {
+        "message": "保存预设"
+    },
+    "SaveCurrentSettingsToPreset": {
+        "message": "[VanillaPlus]: 将当前设置保存为预设"
+    },
+    "SelectPreset": {
+        "message": "[VanillaPlus]: 选择预设"
+    },
+    "PetSize": {
+        "message": "宠物大小"
+    },
+    "Small": {
+        "message": "小"
+    },
+    "Medium": {
+        "message": "中"
+    },
+    "Large": {
+        "message": "大"
+    },
+    "QuestList": {
+        "message": "任务列表"
+    },
+    "RecentlyLootedWindow": {
+        "message": "最近拾取窗口"
+    },
+    "RecentlyLootedItems": {
+        "message": "最近获得物品"
+    },
+    "Config": {
+        "message": "配置"
+    },
+    "Settings": {
+        "message": "设置"
+    },
+    "General": {
+        "message": "常规"
+    },
+    "Style": {
+        "message": "样式"
+    },
+    "Toggles": {
+        "message": "开关"
+    },
+    "Animations": {
+        "message": "动画"
+    },
+    "Colors": {
+        "message": "颜色"
+    },
+    "Icon": {
+        "message": "图标"
+    },
+    "Visibility": {
+        "message": "可见性"
+    },
+    "Functions": {
+        "message": "功能"
+    },
+    "WindowSearch": {
+        "message": "窗口搜索"
+    },
+    "WindowBackgroundsConfig": {
+        "message": "窗口背景配置"
+    },
+    "InputDesiredKeyCombo": {
+        "message": "输入所需按键组合"
+    },
+    "PressAKeyCombo": {
+        "message": "按下按键组合"
+    },
+    "KeybindConflicts": {
+        "message": "按键绑定冲突"
+    },
+    "NoConflictsDetected": {
+        "message": "未检测到冲突"
+    },
+    "Confirm": {
+        "message": "确认"
+    },
+    "Cancel": {
+        "message": "取消"
+    },
+    "InputNewName": {
+        "message": "输入新名称"
+    },
+    "Apply": {
+        "message": "应用"
+    },
+    "NoPresetsSaved": {
+        "message": "无已保存预设"
+    },
+    "DontUsePreset": {
+        "message": "不使用预设"
+    },
+    "PresetConfigManager": {
+        "message": "预设配置管理器"
+    },
+    "HaselTweaksCompatibilityError": {
+        "message": "此功能的原始版本已在 HaselTweaks 插件中启用。\n\n模块ID：{0}"
+    },
+    "SimpleTweaksCompatibilityError": {
+        "message": "此功能的原始版本已在 Simple Tweaks 插件中启用。\n\n模块ID：{0}"
+    },
+    "PluginCompatibilityError": {
+        "message": "此功能的原始版本来自当前已启用的插件：{0}"
+    },
+    "WaymarkRenameWindow": {
+        "message": "场景标记重命名窗口"
+    },
+    "AddNewGearsetRedirection": {
+        "message": "添加新套装重定向"
+    },
+    "ConfigurationWindow": {
+        "message": "配置窗口"
+    },
+    "PartyList": {
+        "message": "小队列表"
+    },
+    "ParameterWidget": {
+        "message": "参数组件"
+    },
+    "Extra": {
+        "message": "额外"
+    },
+    "PercentageSign": {
+        "message": "百分号"
+    },
+    "PercentageFormat": {
+        "message": "百分比格式"
+    },
+    "StyleSettings": {
+        "message": "样式设置"
+    },
+    "ShowOnPartyList": {
+        "message": "在小队列表上显示"
+    },
+    "ApplyToPlayer": {
+        "message": "应用到玩家"
+    },
+    "ApplyToPartyMembers": {
+        "message": "应用到小队成员"
+    },
+    "ChangeHP": {
+        "message": "更改体力"
+    },
+    "ChangeMP": {
+        "message": "更改魔力"
+    },
+    "ChangeGP": {
+        "message": "更改采集力"
+    },
+    "ChangeCP": {
+        "message": "更改制作力"
+    },
+    "ShowOnParameterWidget": {
+        "message": "在参数组件上显示"
+    },
+    "DeadOrAliveMode": {
+        "message": "生死模式"
+    },
+    "ShowPercentageSign": {
+        "message": "显示百分号 %"
+    },
+    "DecimalPlaces": {
+        "message": "小数位数"
+    },
+    "ShowDecimalsOnlyBelow100": {
+        "message": "仅在100%以下显示小数"
+    },
+    "Alive": {
+        "message": "存活"
+    },
+    "Dead": {
+        "message": "战斗不能"
+    },
+    "FeatureToggles": {
+        "message": "功能开关"
+    },
+    "IconSelection": {
+        "message": "图标选择"
+    },
+    "TargetCastBarStyleCombined": {
+        "message": "目标读条样式（合并）"
+    },
+    "TargetCastBarStyleSeparate": {
+        "message": "目标读条样式（分离）"
+    },
+    "FocusTargetCastBarStyle": {
+        "message": "焦点目标读条样式"
+    },
+    "NameplateCastBarStyle": {
+        "message": "名牌读条样式"
+    },
+    "Special": {
+        "message": "特殊"
+    },
+    "SpeedMultiplier": {
+        "message": "速度倍数"
+    },
+    "ZoneSearch": {
+        "message": "区域搜索"
+    },
+    "GearsetSearch": {
+        "message": "套装搜索"
+    },
+    "Position": {
+        "message": "位置"
+    },
+    "Gearset": {
+        "message": "套装"
+    },
+    "SelectGearset": {
+        "message": "选择套装"
+    },
+    "Zone": {
+        "message": "区域"
+    },
+    "SelectZone": {
+        "message": "选择区域"
+    },
+    "NothingSelected": {
+        "message": "未选择"
+    },
+    "ModificationTypeDebug": {
+        "message": "调试"
+    },
+    "ModificationTypeCustomNativeWindows": {
+        "message": "自定义原生窗口"
+    },
+    "ModificationTypeUIModification": {
+        "message": "UI修改"
+    },
+    "ModificationTypeGameBehaviorModification": {
+        "message": "游戏行为修改"
+    },
+    "ModificationTypeCustomNativeOverlay": {
+        "message": "自定义原生叠加层"
+    },
+    "Rename": {
+        "message": "重命名"
+    },
+    "Search": {
+        "message": "搜索"
+    },
+    "DebugAddonWindow": {
+        "message": "调试窗口"
+    },
+    "SelectHudLayoutPreset": {
+        "message": "选择HUD布局预设"
+    },
+    "WorkInProgress": {
+        "message": "开发中\n现在请手动删除预设文件"
+    },
+    "ClickSaveAbove": {
+        "message": "保存新预设前请先点击上方保存"
+    },
+    "SaveCurrentUI": {
+        "message": "将当前UI保存为新预设"
+    },
+    "HudPresetsTitle": {
+        "message": "[VanillaPlus] HUD预设"
+    }
+}

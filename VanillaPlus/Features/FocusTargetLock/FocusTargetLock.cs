@@ -5,8 +5,8 @@ namespace VanillaPlus.Features.FocusTargetLock;
 
 public class FocusTargetLock : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Focus Target Lock",
-        Description = "When a duty recommences, restores your previous focus target.",
+        DisplayName = Strings.FocusTargetLock,
+        Description = Strings.FocusTargetLockDescription,
         Type = ModificationType.GameBehavior,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

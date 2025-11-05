@@ -12,8 +12,8 @@ namespace VanillaPlus.Features.ForcedCutsceneSounds;
 
 public unsafe class ForcedCutsceneSounds : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Forced Cutscene Sounds",
-        Description = "Automatically unmutes selected sound channels in cutscenes.",
+        DisplayName = Strings.ForcedCutsceneSounds,
+        Description = Strings.ForcedCutsceneSoundsDescription,
         Authors = ["Haselnussbomber"],
         Type = ModificationType.GameBehavior,
         ChangeLog = [
@@ -55,20 +55,20 @@ public unsafe class ForcedCutsceneSounds : GameModification {
             Config = config,
         };
 
-        configWindow.AddCategory("General")
-            .AddCheckbox("Restore Mute State After Cutscene", nameof(config.Restore));
+        configWindow.AddCategory(Strings.General)
+            .AddCheckbox(Strings.RestoreMuteStateAfterCutscene, nameof(config.Restore));
 
-        configWindow.AddCategory("Toggles")
-            .AddCheckbox("Unmute Master Volume", nameof(config.HandleMaster))
-            .AddCheckbox("Unmute BGM", nameof(config.HandleBgm))
-            .AddCheckbox("Unmute Sound Effects", nameof(config.HandleSe))
-            .AddCheckbox("Unmute Voice", nameof(config.HandleVoice))
-            .AddCheckbox("Unmute Ambient Sounds", nameof(config.HandleEnv))
-            .AddCheckbox("Unmute System Sounds", nameof(config.HandleSystem))
-            .AddCheckbox("Unmute Performance", nameof(config.HandlePerform));
+        configWindow.AddCategory(Strings.Toggles)
+            .AddCheckbox(Strings.UnmuteMasterVolume, nameof(config.HandleMaster))
+            .AddCheckbox(Strings.UnmuteBGM, nameof(config.HandleBgm))
+            .AddCheckbox(Strings.UnmuteSoundEffects, nameof(config.HandleSe))
+            .AddCheckbox(Strings.UnmuteVoice, nameof(config.HandleVoice))
+            .AddCheckbox(Strings.UnmuteAmbientSounds, nameof(config.HandleEnv))
+            .AddCheckbox(Strings.UnmuteSystemSounds, nameof(config.HandleSystem))
+            .AddCheckbox(Strings.UnmutePerformance, nameof(config.HandlePerform));
 
-        configWindow.AddCategory("Special")
-            .AddCheckbox("Disable in MSQ Roulette", nameof(config.DisableInMsqRoulette));
+        configWindow.AddCategory(Strings.Special)
+            .AddCheckbox(Strings.DisableInMSQRoulette, nameof(config.DisableInMsqRoulette));
 
         OpenConfigAction = configWindow.Toggle;
         

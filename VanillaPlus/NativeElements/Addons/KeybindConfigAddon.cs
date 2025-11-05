@@ -38,7 +38,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
         inputComboLabelNode = new CategoryTextNode {
             AlignmentType = AlignmentType.Left,
             Position = ContentStartPosition + new Vector2(0.0f, 10.0f),
-            String = "Input Desired Key Combo",
+            String = Strings.InputDesiredKeyCombo,
             IsVisible = true,
         };
         AttachNode(inputComboLabelNode);
@@ -55,7 +55,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
             Size = new Vector2(ContentSize.X, 75.0f),
             FontSize = 24,
             AlignmentType = AlignmentType.Center,
-            String = "Press a Key Combo",
+            String = Strings.PressAKeyCombo,
             IsVisible = true,
         };
         AttachNode(currentComboTextNode);
@@ -63,7 +63,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
         conflictsLabelNode = new CategoryTextNode {
             AlignmentType = AlignmentType.Left,
             Position = new Vector2(ContentStartPosition.X, currentComboTextNode.Position.Y + currentComboTextNode.Height),
-            String = "Keybind Conflict(s)",
+            String = Strings.KeybindConflicts,
             IsVisible = true,
         };
         AttachNode(conflictsLabelNode);
@@ -85,7 +85,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
         AttachNode(conflictsScrollableAreaNode);
         
         conflictsScrollableAreaNode.ContentNode.AddNode(new CategoryTextNode {
-            String = "No Conflicts Detected",
+            String = Strings.NoConflictsDetected,
             IsVisible = true,
         });
         conflictsScrollableAreaNode.ContentHeight = conflictsScrollableAreaNode.ContentNode.Nodes.Sum(node => node.IsVisible ? node.Height : 0.0f);
@@ -100,7 +100,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
         confirmButtonNode = new TextButtonNode {
             Position = ContentStartPosition + new Vector2(0.0f, ContentSize.Y - 26.0f),
             Size = new Vector2(100.0f, 24.0f),
-            String = "Confirm",
+            String = Strings.Confirm,
             IsVisible = true,
             OnClick = () => {
                 var newKeybind = new Keybind {
@@ -116,7 +116,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
         cancelButtonNode = new TextButtonNode {
             Position = ContentStartPosition + new Vector2(ContentSize.X - 100.0f, ContentSize.Y - 26.0f),
             Size = new Vector2(100.0f, 24.0f),
-            String = "Cancel",
+            String = Strings.Cancel,
             IsVisible = true,
             OnClick = Close,
         };
@@ -153,7 +153,7 @@ public unsafe class KeybindConfigAddon : NativeAddon {
 
         if (conflicts.Count == 0) {
             conflictsScrollableAreaNode.ContentNode.AddNode(new CategoryTextNode {
-                String = "No Conflicts Detected",
+                String = Strings.NoConflictsDetected,
                 IsVisible = true,
             });
         }

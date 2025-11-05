@@ -17,21 +17,20 @@ public class AddonStringInfoNode : StringInfoNode {
         => null;
 
     public override int Compare(IInfoNodeData other, string sortingMode) {
-        switch (sortingMode) {
-            case "Alphabetical":
-                return string.CompareOrdinal(Label, (other as AddonStringInfoNode)?.Label);
-
-            case "Visibility":
-                var visibilityComparison = (other as AddonStringInfoNode)?.IsVisible().CompareTo(IsVisible()) ?? 0;
-                if (visibilityComparison is 0) {
-                    visibilityComparison = string.CompareOrdinal(Label, (other as AddonStringInfoNode)?.Label);
-                }
-
-                return visibilityComparison;
-
-            default:
-                return base.Compare(other, sortingMode);
+        if (sortingMode == Strings.Alphabetical) {
+            return string.CompareOrdinal(Label, (other as AddonStringInfoNode)?.Label);
         }
+
+        if (sortingMode == Strings.Visibility) {
+            var visibilityComparison = (other as AddonStringInfoNode)?.IsVisible().CompareTo(IsVisible()) ?? 0;
+            if (visibilityComparison is 0) {
+                visibilityComparison = string.CompareOrdinal(Label, (other as AddonStringInfoNode)?.Label);
+            }
+
+            return visibilityComparison;
+        }
+
+        return base.Compare(other, sortingMode);
     }
 
     private bool IsVisible() => Services.GameGui.GetAddonByName(Label).IsVisible;

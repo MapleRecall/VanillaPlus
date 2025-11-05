@@ -23,7 +23,7 @@ public class NodeConfig<T> : NodeConfigBase<T> where T : NodeBase, new() {
         };
 
         var labelNode = new LabelTextNode {
-            String = "Position",
+            String = Strings.Position,
             Size = new Vector2(ElementStartOffset, 28.0f),
         };
         container.AddNode(labelNode);

@@ -9,9 +9,8 @@ namespace VanillaPlus.Features.HUDCoordinates;
 
 public unsafe class HUDCoordinates : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "HUD Coordinates",
-        Description = "Display coordinate positions in HUD Layout nodes, allows you get get things exactly right.\n\n" +
-                      "Displays coordinates for the center of the HUD element.",
+        DisplayName = Strings.HUDCoordinates,
+        Description = Strings.HUDCoordinatesDescription,
         Type = ModificationType.UserInterface,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

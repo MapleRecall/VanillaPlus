@@ -9,8 +9,8 @@ namespace VanillaPlus.Features.FasterScroll;
 
 public unsafe class FasterScroll : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Faster Scrollbars",
-        Description = "Increases the speed of all scrollbars.",
+        DisplayName = Strings.FasterScroll,
+        Description = Strings.FasterScrollDescription,
         Authors = ["MidoriKami"],
         Type = ModificationType.GameBehavior,
         ChangeLog = [
@@ -29,12 +29,12 @@ public unsafe class FasterScroll : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(400.0f, 125.0f),
             InternalName = "FasterScrollConfig",
-            Title = "Faster Scrollbars Config",
+            Title = Strings.FasterScrollConfig,
             Config = config,
         };
 
-        configWindow.AddCategory("Settings")
-            .AddFloatSlider("Speed Multiplier", 0.5f, 4.0f, 2, 0.05f, nameof(config.SpeedMultiplier));
+        configWindow.AddCategory(Strings.Settings)
+            .AddFloatSlider(Strings.SpeedMultiplier, 0.5f, 4.0f, 2, 0.05f, nameof(config.SpeedMultiplier));
         
         OpenConfigAction = configWindow.Toggle;
 

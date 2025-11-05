@@ -12,11 +12,15 @@ public class ColorConfig : BaseConfigEntry {
     public required Vector4 Color { get; set; }
     public Vector4? DefaultColor { get; init; }
 
-    private readonly ColorPickerAddon colorPickerInstance = new() {
-        NativeController = System.NativeController,
-        InternalName = "ColorPicker",
-        Title = "Color Picker Window",
-    };
+    private readonly ColorPickerAddon colorPickerInstance;
+
+    public ColorConfig() {
+        colorPickerInstance = new ColorPickerAddon {
+            NativeController = System.NativeController,
+            InternalName = "ColorPicker",
+            Title = Strings.ColorPickerWindow,
+        };
+    }
 
     public override NodeBase BuildNode() {
         var layoutNode = new HorizontalListNode {

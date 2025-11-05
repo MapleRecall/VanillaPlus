@@ -12,8 +12,8 @@ namespace VanillaPlus.Features.MacroTooltips;
 /// </summary>
 public unsafe class MacroTooltips : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Macro Tooltips",
-        Description = "Displays action tooltips when hovering over a macro with '/macroicon' set with an 'action'",
+        DisplayName = Strings.MacroTooltips,
+        Description = Strings.MacroTooltipsDescription,
         Type = ModificationType.UserInterface,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

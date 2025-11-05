@@ -35,7 +35,7 @@ public class AddonModificationBrowser : NativeAddon {
     
     private readonly AddonChangelogBrowser? changelogBrowser = new() {
         InternalName = "VPChangelog",
-        Title = "Vanilla Plus Changelog Browser",
+        Title = Strings.ChangelogBrowserTitle,
         NativeController = System.NativeController,
         Size = new Vector2(450.0f, 400.0f),
     };
@@ -118,7 +118,7 @@ public class AddonModificationBrowser : NativeAddon {
         searchBoxNode = new TextInputNode {
             IsVisible = true,
             OnInputReceived = OnSearchBoxInputReceived,
-            PlaceholderString = "Search . . .",
+            PlaceholderString = Strings.SearchPlaceholder,
             AutoSelectAll = true,
         };
         searchContainerNode.AddNode(searchBoxNode);
@@ -137,7 +137,7 @@ public class AddonModificationBrowser : NativeAddon {
             LineSpacing = 22,
             FontType = FontType.Axis,
             IsVisible = true,
-            String = "Please select an option on the left",
+            String = Strings.PleaseSelectOption,
             TextColor = ColorHelper.GetColor(1),
         };
         System.NativeController.AttachNode(descriptionTextNode, descriptionContainerNode);
@@ -154,7 +154,7 @@ public class AddonModificationBrowser : NativeAddon {
         System.NativeController.AttachNode(descriptionImageTextNode, descriptionContainerNode);
 
         changelogButtonNode = new TextButtonNode {
-            SeString = "Changelog",
+            SeString = Strings.Changelog,
             OnClick = OnChangelogButtonClicked,
         };
         System.NativeController.AttachNode(changelogButtonNode, descriptionContainerNode);
@@ -326,7 +326,7 @@ public class AddonModificationBrowser : NativeAddon {
         }
 
         descriptionTextNode.IsVisible = true;
-        descriptionTextNode.String = "Please select an option on the left";
+        descriptionTextNode.String = Strings.PleaseSelectOption;
 
         descriptionImageFrame.Scale = Vector2.One;
         

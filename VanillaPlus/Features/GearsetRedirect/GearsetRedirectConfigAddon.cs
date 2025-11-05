@@ -30,7 +30,7 @@ public unsafe class GearsetRedirectConfigAddon : NativeAddon {
         NativeController = System.NativeController,
         Size = new Vector2(500.0f, 275.0f),
         InternalName = "AddRedirectionWindow",
-        Title = "Add New Gearset Redirection",
+        Title = Strings.AddNewGearsetRedirection,
     };
 
     public override void Dispose() {
@@ -46,7 +46,7 @@ public unsafe class GearsetRedirectConfigAddon : NativeAddon {
             Position = ContentStartPosition,
             IsVisible = true,
             SelectionOptions = GetConfigInfos(),
-            SortOptions = [ "Alphabetical", "Id" ],
+            SortOptions = [ Strings.Alphabetical, Strings.Id ],
             AddNewEntry = OnAddEntry,
             RemoveEntry = OnRemoveEntry,
             OnOptionChanged = OnOptionChanged,

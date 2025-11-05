@@ -13,8 +13,8 @@ namespace VanillaPlus.Features.LocationDisplay;
 
 public unsafe class LocationDisplay : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Location Display",
-        Description = "Displays your current location in the server information bar.",
+        DisplayName = Strings.LocationDisplay,
+        Description = Strings.LocationDisplayDescription,
         Authors = [ "MidoriKami" ],
         Type = ModificationType.UserInterface,
         ChangeLog = [
@@ -54,7 +54,7 @@ public unsafe class LocationDisplay : GameModification {
         configWindow = new LocationDisplayConfigAddon {
             NativeController = System.NativeController,
             InternalName = "LocationDisplayConfig",
-            Title = "Location Display Config",
+            Title = Strings.LocationDisplayConfig,
             Config = config,
         };
 
@@ -219,7 +219,7 @@ public unsafe class LocationDisplay : GameModification {
 
 		if (lastHousingWard != ward) {
 			lastHousingWard = ward;
-			currentWard = $"Ward {ward}";
+			currentWard = string.Format(Strings.Ward, ward);
 			locationChanged = true;
 		}
 	}
@@ -257,18 +257,18 @@ public unsafe class LocationDisplay : GameModification {
 		var room = housingManager->GetCurrentRoom();
 		var division = housingManager->GetCurrentDivision();
 
-		strings.Add($"Ward {ward}");
-		if (division == 2 || plot is >= 30 or -127) strings.Add($"Subdivision");
+		strings.Add(string.Format(Strings.Ward, ward));
+		if (division == 2 || plot is >= 30 or -127) strings.Add($"{Strings.Subdivision}");
 
 		switch (plot) {
 			case < -1:
-				strings.Add($"Apartment {(room == 0 ? $"Lobby" : $"{room}")}");
+				strings.Add($"{Strings.Apartment} {(room == 0 ? $"{Strings.Lobby}" : $"{room}")}");
 				break;
 
 			case > -1:
-				strings.Add($"Plot {plot + 1}");
+				strings.Add(string.Format(Strings.Plot, plot + 1));
 				if (room > 0) {
-					strings.Add($"Room {room}");
+					strings.Add(string.Format(Strings.Room, room));
 				}
 				break;
 		}

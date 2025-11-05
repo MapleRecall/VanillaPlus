@@ -14,10 +14,10 @@ namespace VanillaPlus.Features.PartyFinderPresets;
 
 public unsafe class PartyFinderPresets : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Party Finder Presets",
-        Description = "Allows you to save an use presets for the Party Finder Recruitment window",
+        DisplayName = Strings.PartyFinderPresets,
+        Description = Strings.PartyFinderPresetsDescription,
         Type = ModificationType.GameBehavior,
-        Authors = [ "MidoriKami" ],
+        Authors = ["MidoriKami"],
         ChangeLog = [
             new ChangeLogInfo(1, "InitialChangelog"),
             new ChangeLogInfo(2, "Reworked configuration systems, allows for easier renaming of existing presets"),
@@ -29,7 +29,7 @@ public unsafe class PartyFinderPresets : GameModification {
 
     private TextButtonNode? savePresetButton;
     private TextDropDownNode? presetDropDown;
-    
+
     private RenameAddon? savePresetWindow;
 
     private ListConfigAddon<PresetInfo, PartyFinderPresetConfigNode>? presetEditorAddon;
@@ -41,7 +41,7 @@ public unsafe class PartyFinderPresets : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(600.0f, 400.0f),
             InternalName = "PresetConfigManager",
-            Title = "Preset Config Manager",
+            Title = Strings.PresetConfigManager,
             Options = GetPresetInfos(),
             OnConfigChanged = _ => {
                 UpdateDropDownOptions();
@@ -55,7 +55,7 @@ public unsafe class PartyFinderPresets : GameModification {
         savePresetWindow = new RenameAddon {
             NativeController = System.NativeController,
             InternalName = "PartyFinderPresetRename",
-            Title = "Party Finder Preset",
+            Title = Strings.PartyFinderPreset,
             IsInputValid = PresetManager.IsValidFileName,
             OnRenameComplete = newOption => {
                 PresetManager.SavePreset(newOption);
@@ -65,7 +65,7 @@ public unsafe class PartyFinderPresets : GameModification {
         };
 
         OpenConfigAction = presetEditorAddon.Toggle;
-        
+
         Services.AddonLifecycle.RegisterListener(AddonEvent.PreReceiveEvent, "LookingForGroup", OnLookingForGroupEvent);
 
         recruitmentCriteriaController = new AddonController<AtkUnitBase>("LookingForGroupCondition");
@@ -74,8 +74,8 @@ public unsafe class PartyFinderPresets : GameModification {
                 Position = new Vector2(406.0f, 605.0f),
                 Size = new Vector2(160.0f, 28.0f),
                 IsVisible = true,
-                String = "Save Preset",
-                Tooltip = "[VanillaPlus]: Save current settings to a preset",
+                String = Strings.SavePreset,
+                Tooltip = Strings.SaveCurrentSettingsToPreset,
                 OnClick = savePresetWindow.Open,
             };
             System.NativeController.AttachNode(savePresetButton, addon->RootNode);
@@ -105,11 +105,11 @@ public unsafe class PartyFinderPresets : GameModification {
 
             System.NativeController.AttachNode(presetDropDown, addon->RootNode);
         };
-        
+
         lookingForGroupController.OnDetach += _ => {
             System.NativeController.DetachNode(presetDropDown);
         };
-        
+
         lookingForGroupController.Enable();
     }
 
@@ -118,13 +118,13 @@ public unsafe class PartyFinderPresets : GameModification {
 
         recruitmentCriteriaController?.Dispose();
         recruitmentCriteriaController = null;
-        
+
         lookingForGroupController?.Dispose();
         lookingForGroupController = null;
-        
+
         savePresetWindow?.Dispose();
         savePresetWindow = null;
-        
+
         presetEditorAddon?.Dispose();
         presetEditorAddon = null;
 
@@ -137,9 +137,9 @@ public unsafe class PartyFinderPresets : GameModification {
         if ((AtkEventType)eventArgs.AtkEventType is not AtkEventType.ButtonClick) return;
         if (eventArgs.EventParam is not 2) return;
         if (presetDropDown?.SelectedOption is not { } selectedOption) return;
-        if (selectedOption is PresetManager.DefaultString) return;
-        if (selectedOption is PresetManager.DontUseString) return;
-        
+        if (selectedOption == PresetManager.DefaultString) return;
+        if (selectedOption == PresetManager.DontUseString) return;
+
         PresetManager.LoadPreset(selectedOption);
     }
 
@@ -147,15 +147,15 @@ public unsafe class PartyFinderPresets : GameModification {
         if (presetDropDown is not null) {
             var presets = PresetManager.GetPresetNames();
             var anyPresets = presets.All(presetName => presetName != PresetManager.DefaultString);
-            
+
             presetDropDown.Options = presets;
             presetDropDown.IsEnabled = anyPresets;
 
             if (anyPresets) {
-                presetDropDown.Tooltip = "[VanillaPlus]: Select a preset";
+                presetDropDown.Tooltip = Strings.SelectPreset;
             }
             else {
-                presetDropDown.Tooltip = "[VanillaPlus]: No presets saved";
+                presetDropDown.Tooltip = Strings.NoPresetsSaved;
             }
         }
     }

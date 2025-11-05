@@ -23,11 +23,17 @@ public unsafe class RedirectInfo : IInfoNodeData {
     public string? GetTexturePath()
         => null;
 
-    public int Compare(IInfoNodeData other, string sortingMode) => sortingMode switch {
-        "Alphabetical" => string.CompareOrdinal(GetLabel(), other.GetLabel()),
-        "Id" => GetId()?.CompareTo(other.GetId()) ?? 0,
-        _ => 0,
-    };
+    public int Compare(IInfoNodeData other, string sortingMode) {
+        if (sortingMode == Strings.Alphabetical) {
+            return string.CompareOrdinal(GetLabel(), other.GetLabel());
+        }
+
+        if (sortingMode == Strings.Id) {
+            return GetId()?.CompareTo(other.GetId()) ?? 0;
+        }
+
+        return 0;
+    }
     
     private ref RaptureGearsetModule.GearsetEntry GetGearsetData()
         => ref RaptureGearsetModule.Instance()->Entries[AlternateGearsetId];

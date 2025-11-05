@@ -4,8 +4,8 @@ namespace VanillaPlus.Features.RetainerSearchBar;
 
 public class RetainerSearchBar : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Retainer Search Bar",
-        Description = "Adds a search bar to the retainer window.",
+        DisplayName = Strings.RetainerSearchBar,
+        Description = Strings.RetainerSearchBarDescription,
         Type = ModificationType.UserInterface,
         SubType = ModificationSubType.Inventory,
         Authors = [ "MidoriKami" ],

@@ -54,7 +54,7 @@ public class NewRedirectionAddon : NativeAddon {
             IsVisible = true,
             AlignmentType = AlignmentType.Center,
             FontSize = 24,
-            String = "Gearset",
+            String = Strings.Gearset,
         };
         AttachNode(gearsetLabelNode);
 
@@ -71,7 +71,7 @@ public class NewRedirectionAddon : NativeAddon {
         selectGearsetButtonNode = new TextButtonNode {
             Size = new Vector2(halfWidth * 2.0f / 3.0f, 32.0f),
             Position = new Vector2(ContentStartPosition.X + halfWidth / 2.0f - new Vector2(halfWidth * 2.0f / 3.0f, 32.0f).X / 2.0f, gearsetInfoNode.Y + gearsetInfoNode.Height + 4.0f),
-            String = "Select Gearset",
+            String = Strings.SelectGearset,
             IsVisible = true,
             OnClick = OnSelectGearset,
         };
@@ -97,7 +97,7 @@ public class NewRedirectionAddon : NativeAddon {
             IsVisible = true,
             FontSize = 24,
             AlignmentType = AlignmentType.Center,
-            String = "Zone",
+            String = Strings.Zone,
         };
         AttachNode(zoneLabelNode);
 
@@ -105,7 +105,7 @@ public class NewRedirectionAddon : NativeAddon {
             Size = new Vector2(halfWidth, 64.0f),
             Position = new Vector2(zoneLabelNode.X, zoneLabelNode.Y + zoneLabelNode.Height + 16.0f),
             IsVisible = true,
-            GetLabelFunc = territory => territory.RowId is 1 ? "Nothing Selected" : territory.PlaceName.Value.Name.ToString(),
+            GetLabelFunc = territory => territory.RowId is 1 ? Strings.NothingSelected : territory.PlaceName.Value.Name.ToString(),
             GetSubLabelFunc = territory => territory.ContentFinderCondition.RowId is 0 ? string.Empty : territory.ContentFinderCondition.Value.Name.ToString(),
             GetIconIdFunc = _ => 60072,
             GetTexturePathFunc = territory => territory.LoadingImage.Value.FileName.ToString().IsNullOrEmpty() ? string.Empty : $"ui/loadingimage/{territory.LoadingImage.Value.FileName}_hr1.tex",
@@ -116,7 +116,7 @@ public class NewRedirectionAddon : NativeAddon {
         selectZoneButtonNode = new TextButtonNode {
             Size = new Vector2(halfWidth * 2.0f / 3.0f, 32.0f),
             Position = new Vector2(zoneLabelNode.X + halfWidth / 2.0f - new Vector2(halfWidth * 2.0f / 3.0f, 32.0f).X / 2.0f, zoneInfoNode.Y + zoneInfoNode.Height + 4.0f),
-            String = "Select Zone",
+            String = Strings.SelectZone,
             IsVisible = true,
             OnClick = OnSelectZone,
         };
@@ -126,7 +126,7 @@ public class NewRedirectionAddon : NativeAddon {
             Size = new Vector2(100.0f, 24.0f),
             Position = ContentStartPosition + new Vector2(0.0f, ContentSize.Y - 24.0f),
             IsVisible = true,
-            String = "Confirm",
+            String = Strings.Confirm,
             OnClick = OnConfirm,
         };
         AttachNode(confirmButtonNode);
@@ -135,7 +135,7 @@ public class NewRedirectionAddon : NativeAddon {
             Size = new Vector2(100.0f, 24.0f),
             Position = ContentStartPosition + new Vector2(ContentSize.X - 100.0f, ContentSize.Y - 24.0f),
             IsVisible = true,
-            String = "Cancel",
+            String = Strings.Cancel,
             OnClick = OnCancel,
         };
         AttachNode(cancelButtonNode);

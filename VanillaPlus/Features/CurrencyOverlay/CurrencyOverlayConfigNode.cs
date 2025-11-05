@@ -41,7 +41,7 @@ public class CurrencyOverlayConfigNode : ConfigNode<CurrencySetting> {
         System.NativeController.AttachNode(itemNameTextNode, this);
 
         enableLowLimitCheckbox = new CheckboxNode {
-            String = "Warn when below limit",
+            String = Strings.WarnWhenBelowLimit,
             IsVisible = true,
             OnClick = enabled => {
                 if (ConfigurationOption is not null) {
@@ -65,7 +65,7 @@ public class CurrencyOverlayConfigNode : ConfigNode<CurrencySetting> {
         
         enableHighLimitCheckbox = new CheckboxNode {
             IsVisible = true,
-            String = "Warn when above limit",
+            String = Strings.WarnWhenAboveLimit,
             OnClick = enabled => {
                 if (ConfigurationOption is not null) {
                     ConfigurationOption.EnableHighLimit = enabled;
@@ -88,7 +88,7 @@ public class CurrencyOverlayConfigNode : ConfigNode<CurrencySetting> {
         
         reverseIconCheckbox = new CheckboxNode {
             IsVisible = true,
-            String = "Reverse icon position",
+            String = Strings.ReverseIconPosition,
             OnClick = enabled => {
                 if (ConfigurationOption is not null) {
                     ConfigurationOption.IconReversed = enabled;
@@ -100,7 +100,7 @@ public class CurrencyOverlayConfigNode : ConfigNode<CurrencySetting> {
         
         allowMovingCheckbox = new CheckboxNode {
             IsVisible = true,
-            String = "Enable moving overlay element",
+            String = Strings.EnableMovingOverlayElement,
             OnClick = enabled => {
                 if (ConfigurationOption is not null) {
                     ConfigurationOption.IsNodeMoveable = enabled;
@@ -111,7 +111,7 @@ public class CurrencyOverlayConfigNode : ConfigNode<CurrencySetting> {
         System.NativeController.AttachNode(allowMovingCheckbox, this);
 
         scaleTextNode = new CategoryTextNode {
-            String = "Scale",
+            String = Strings.Scale,
             IsVisible = true,
         };
         System.NativeController.AttachNode(scaleTextNode, this);

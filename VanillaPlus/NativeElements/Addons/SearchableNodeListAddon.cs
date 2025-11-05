@@ -69,7 +69,7 @@ public unsafe class SearchableNodeListAddon : NodeListAddon {
 
         textInputNode = new TextInputNode {
             IsVisible = true,
-            PlaceholderString = "Search . . .",
+            PlaceholderString = Strings.SearchPlaceholder,
         };
         textInputNode.SeString = searchText;
 

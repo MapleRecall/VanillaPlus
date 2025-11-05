@@ -14,8 +14,8 @@ namespace VanillaPlus.Features.BetterCursor;
 
 public unsafe class BetterCursor : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Better Cursor",
-        Description = "Draws a ring around the cursor to make it easier to see",
+        DisplayName = Strings.BetterCursor,
+        Description = Strings.BetterCursorDescription,
         Authors = ["MidoriKami"],
         Type = ModificationType.UserInterface,
         ChangeLog = [
@@ -41,23 +41,23 @@ public unsafe class BetterCursor : GameModification {
         configWindow = new ConfigAddon {
             NativeController = System.NativeController,
             InternalName = "BetterCursorConfig",
-            Title = "Better Cursor Config",
+            Title = Strings.BetterCursorConfig,
             Config = config,
         };
 
-        configWindow.AddCategory("Style")
+        configWindow.AddCategory(Strings.Style)
             .AddColorEdit("Color", nameof(config.Color), KnownColor.White.Vector())
             .AddInputFloat("Size", 16, 16..512, nameof(config.Size));
 
-        configWindow.AddCategory("Functions")
-            .AddCheckbox("Enable Animation", nameof(config.Animations))
-            .AddCheckbox("Hide on Left-Hold or Right-Hold", nameof(config.HideOnCameraMove));
+        configWindow.AddCategory(Strings.Functions)
+            .AddCheckbox(Strings.EnableAnimation, nameof(config.Animations))
+            .AddCheckbox(Strings.HideOnLeftHoldOrRightHold, nameof(config.HideOnCameraMove));
         
-        configWindow.AddCategory("Visibility")
-            .AddCheckbox("Only show in Combat", nameof(config.OnlyShowInCombat))
-            .AddCheckbox("Only Show in Duties", nameof(config.OnlyShowInDuties));
+        configWindow.AddCategory(Strings.Visibility)
+            .AddCheckbox(Strings.OnlyShowInCombat, nameof(config.OnlyShowInCombat))
+            .AddCheckbox(Strings.OnlyShowInDuties, nameof(config.OnlyShowInDuties));
 
-        configWindow.AddCategory("Icon Selection")
+        configWindow.AddCategory(Strings.IconSelection)
             .AddSelectIcon("Icon", nameof(config.IconId));
 
         config.OnSave += UpdateNodeConfig;

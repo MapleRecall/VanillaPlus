@@ -1,8 +1,8 @@
 {
     "Author": "MidoriKami",
-    "Name": "VanillaPlus",
-    "Punchline": "A collection of various game modifications",
-    "Description": "This plugin is primarily focused on various UI adjustments, behavior adjustments, and adding new native elements to the game.",
+    "Name": "VanillaPlus (原生界面增强)",
+    "Punchline": "一个基于原生界面的多功能插件，提供各种UI和行为调整。",
+    "Description": "这个插件主要致力于各种原生UI的调整、行为调整以及向游戏中添加新的原生元素。",
     "Tags": [
         "UI"
     ],

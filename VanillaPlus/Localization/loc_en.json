@@ -1,0 +1,887 @@
+{
+    "PluginTitle": {
+        "message": "Vanilla Plus Modification Browser"
+    },
+    "OpenModificationBrowser": {
+        "message": "Open Game Modification Browser"
+    },
+    "WindowSystemName": {
+        "message": "VanillaPlus"
+    },
+    "ChangelogBrowserTitle": {
+        "message": "Vanilla Plus Changelog Browser"
+    },
+    "PleaseSelectOption": {
+        "message": "Please select an option on the left"
+    },
+    "Changelog": {
+        "message": "Changelog"
+    },
+    "FailedToLoadDisabled": {
+        "message": "Failed to load, this module has been disabled"
+    },
+    "ExperimentalWarning": {
+        "message": "Caution, this feature is experimental.\nMay contain bugs or crash your game."
+    },
+    "RetryCompatibilityCheck": {
+        "message": "Retry compatability check"
+    },
+    "OpenConfigurationWindow": {
+        "message": "Open configuration window"
+    },
+    "NoOptionSelected": {
+        "message": "No Option Selected"
+    },
+    "WindowNotSet": {
+        "message": "Window not Set"
+    },
+    "BackgroundColor": {
+        "message": "Background Color"
+    },
+    "Color": {
+        "message": "Color"
+    },
+    "PaddingSize": {
+        "message": "Padding Size"
+    },
+    "Keybind": {
+        "message": "Keybind"
+    },
+    "ChangeKeybind": {
+        "message": "Change Keybind"
+    },
+    "WindowSize": {
+        "message": "Window Size"
+    },
+    "Width": {
+        "message": "Width"
+    },
+    "Height": {
+        "message": "Height"
+    },
+    "ChangesWontTakeEffect": {
+        "message": "Changes won't take effect until the window is reopened"
+    },
+    "Disable": {
+        "message": "Disable"
+    },
+    "Enable": {
+        "message": "Enable"
+    },
+    "ColorPickerWindow": {
+        "message": "Color Picker Window"
+    },
+    "ColorPicker": {
+        "message": "Color Picker"
+    },
+    "TextColor": {
+        "message": "Text Color"
+    },
+    "TextOutline": {
+        "message": "Text Outline"
+    },
+    "FontSize": {
+        "message": "Font Size"
+    },
+    "Font": {
+        "message": "Font"
+    },
+    "Alignment": {
+        "message": "Alignment"
+    },
+    "SearchPlaceholder": {
+        "message": "Search . . ."
+    },
+    "SupportsRegexSearch": {
+        "message": "[VanillaPlus]: Supports Regex Search"
+    },
+    "StartInputWithDollar": {
+        "message": "Start input with '$' to search by description"
+    },
+    "Config": {
+        "message": "Config"
+    },
+    "Settings": {
+        "message": "Settings"
+    },
+    "General": {
+        "message": "General"
+    },
+    "Style": {
+        "message": "Style"
+    },
+    "Toggles": {
+        "message": "Toggles"
+    },
+    "Animations": {
+        "message": "Animations"
+    },
+    "Colors": {
+        "message": "Colors"
+    },
+    "Icon": {
+        "message": "Icon"
+    },
+    "Visibility": {
+        "message": "Visibility"
+    },
+    "Functions": {
+        "message": "Functions"
+    },
+    "KeybindConfigWindow": {
+        "message": "Keybind Config Window"
+    },
+    "ConfigurationWindow": {
+        "message": "Configuration Window"
+    },
+    "PresetConfigManager": {
+        "message": "Preset Config Manager"
+    },
+    "HaselTweaksCompatibilityError": {
+        "message": "The original version of this feature is already active in HaselTweaks Plugin.\n\nID: {0}"
+    },
+    "SimpleTweaksCompatibilityError": {
+        "message": "The original version of this feature is already active in Simple Tweaks Plugin.\n\nID: {0}"
+    },
+    "PluginCompatibilityError": {
+        "message": "The original version of this feature is from a plugin that is currently active: {0}"
+    },
+    "CurrencyOverlay": {
+        "message": "Currency Overlay"
+    },
+    "CurrencyOverlayDescription": {
+        "message": "Allows you to add additional currencies to your UI Overlay.\n\nAdditionally allows you to set minimum and maximum values to trigger a warning."
+    },
+    "CurrencyOverlayConfig": {
+        "message": "Currency Overlay Config"
+    },
+    "ItemSearch": {
+        "message": "Item Search"
+    },
+    "WarnWhenBelowLimit": {
+        "message": "Warn when below limit"
+    },
+    "WarnWhenAboveLimit": {
+        "message": "Warn when above limit"
+    },
+    "ReverseIconPosition": {
+        "message": "Reverse icon position"
+    },
+    "EnableMovingOverlayElement": {
+        "message": "Enable moving overlay element"
+    },
+    "Scale": {
+        "message": "Scale"
+    },
+    "WindowBackgroundColorPicker": {
+        "message": "Window Background Color Picker"
+    },
+    "WondrousTailsProbabilities": {
+        "message": "Wondrous Tails Probabilities"
+    },
+    "WondrousTailsProbabilitiesDescription": {
+        "message": "Displays current line probabilities and average reroll probabilities in the Wondrous Tails Book."
+    },
+    "LineChances": {
+        "message": "Line Chances: "
+    },
+    "ShuffleAverage": {
+        "message": "Shuffle Average: "
+    },
+    "Alphabetical": {
+        "message": "Alphabetical"
+    },
+    "Id": {
+        "message": "Id"
+    },
+    "WindowBackgrounds": {
+        "message": "Window Backgrounds"
+    },
+    "WindowBackgroundsDescription": {
+        "message": "Allows you to add a background to any native window.\n\nExamples: Cast Bar, Target Health Bar, Inventory Widget, Todo List."
+    },
+    "WindowBackgroundsConfig": {
+        "message": "Window Backgrounds Config"
+    },
+    "WindowSearch": {
+        "message": "Window Search"
+    },
+    "InputDesiredKeyCombo": {
+        "message": "Input Desired Key Combo"
+    },
+    "PressAKeyCombo": {
+        "message": "Press a Key Combo"
+    },
+    "KeybindConflicts": {
+        "message": "Keybind Conflict(s)"
+    },
+    "NoConflictsDetected": {
+        "message": "No Conflicts Detected"
+    },
+    "Confirm": {
+        "message": "Confirm"
+    },
+    "Cancel": {
+        "message": "Cancel"
+    },
+    "InputNewName": {
+        "message": "Input new name"
+    },
+    "Apply": {
+        "message": "Apply"
+    },
+    "NoPresetsSaved": {
+        "message": "No Presets Saved"
+    },
+    "DontUsePreset": {
+        "message": "Don't Use Preset"
+    },
+    "TargetCastBarCountdown": {
+        "message": "Target Cast Bar Countdown"
+    },
+    "TargetCastBarCountdownDescription": {
+        "message": "Adds the time remaining for your targets current cast to the cast bar."
+    },
+    "TargetCastBarCountdownConfig": {
+        "message": "Target Cast Bar Countdown Config"
+    },
+    "ShowOnPrimaryTargetCastbar": {
+        "message": "Show on Primary Target Castbar"
+    },
+    "ShowOnFocusTargetCastbar": {
+        "message": "Show on Focus Target Castbar"
+    },
+    "ShowOnNameplateTargetCastbar": {
+        "message": "Show on Nameplate Target Castbar"
+    },
+    "SuppressDialogAdvance": {
+        "message": "Suppress Dialogue Advance"
+    },
+    "SuppressDialogAdvanceDescription": {
+        "message": "Prevents advancing a cutscene dialogue, unless you click on the dialogue box itself."
+    },
+    "SuppressDialogAdvanceConfig": {
+        "message": "Suppress Dialog Advance Config"
+    },
+    "ApplyOnlyInCutscenes": {
+        "message": "Apply only in Cutscenes"
+    },
+    "StickyShopCategories": {
+        "message": "Sticky Shop Categories"
+    },
+    "StickyShopCategoriesDescription": {
+        "message": "Remembers the previously selected category when opening shops, retainer markets, grand company vendors, etc."
+    },
+    "SkipTeleportConfirm": {
+        "message": "Skip Teleport Confirm"
+    },
+    "SkipTeleportConfirmDescription": {
+        "message": "Skips the 'Teleport to [Location] for [amount] gil?' popup when using the map to teleport."
+    },
+    "SaddlebagSearchBar": {
+        "message": "Saddlebag Search Bar"
+    },
+    "SaddlebagSearchBarDescription": {
+        "message": "Adds a search bar to the saddlebag window."
+    },
+    "RetainerSearchBar": {
+        "message": "Retainer Search Bar"
+    },
+    "RetainerSearchBarDescription": {
+        "message": "Adds a search bar to the retainer window."
+    },
+    "ResetInventoryTab": {
+        "message": "Reset Inventory Tab"
+    },
+    "ResetInventoryTabDescription": {
+        "message": "Automatically resets the inventory to the first tab when opened."
+    },
+    "MiniCactpotHelper": {
+        "message": "Mini Cactpot Helper"
+    },
+    "MiniCactpotHelperDescription": {
+        "message": "Indicates which Mini Cactpot spots you should reveal next."
+    },
+    "MiniCactpotHelperConfig": {
+        "message": "Mini Cactpot Helper Config"
+    },
+    "EnableAnimations": {
+        "message": "Enable Animations"
+    },
+    "MacroTooltips": {
+        "message": "Macro Tooltips"
+    },
+    "MacroTooltipsDescription": {
+        "message": "Displays action tooltips when hovering over a macro with '/macroicon' set with an 'action'"
+    },
+    "MacroLineNumbers": {
+        "message": "Macro Line Numbers"
+    },
+    "MacroLineNumbersDescription": {
+        "message": "Adds line numbers to the User Macros window."
+    },
+    "InventorySearchBar": {
+        "message": "Inventory Search Bar"
+    },
+    "InventorySearchBarDescription": {
+        "message": "Adds a search bar to the inventory window."
+    },
+    "ArmourySearchBar": {
+        "message": "Armoury Search Bar"
+    },
+    "ArmourySearchBarDescription": {
+        "message": "Adds a search bar to the armoury window."
+    },
+    "LocationDisplay": {
+        "message": "Location Display"
+    },
+    "LocationDisplayDescription": {
+        "message": "Displays your current location in the server information bar."
+    },
+    "LocationDisplayConfig": {
+        "message": "Location Display Config"
+    },
+    "Ward": {
+        "message": "Ward {0}"
+    },
+    "Subdivision": {
+        "message": "Subdivision"
+    },
+    "Apartment": {
+        "message": "Apartment"
+    },
+    "Lobby": {
+        "message": "Lobby"
+    },
+    "Plot": {
+        "message": "Plot {0}"
+    },
+    "Room": {
+        "message": "Room {0}"
+    },
+    "LocationFormatInstruction": {
+        "message": "Use the text box below to define how you want the text to be formatted.\nUse symbols {0} {1} {2} {3} {4} where you want the following values to be in the string\n\n{0} - Region (Ex. The Northern Empty)\n{1} - Territory (Ex. Old Sharlayan)\n{2} - Area (Ex. Archons Design)\n{3} - Sub-Area (Ex. Old Sharlayan Aetheryte Plaza)\n{4} - Housing Ward (Ex. Ward 14)"
+    },
+    "InfoBarEntry": {
+        "message": "Info Bar Entry"
+    },
+    "InfoBarTooltip": {
+        "message": "Info Bar Tooltip"
+    },
+    "ResetToDefault": {
+        "message": "Reset to Default"
+    },
+    "ShowInstanceNumber": {
+        "message": "Show Instance Number"
+    },
+    "ShowPreciseHousingLocation": {
+        "message": "Show Precise Housing Location"
+    },
+    "HUDCoordinates": {
+        "message": "HUD Coordinates"
+    },
+    "HUDCoordinatesDescription": {
+        "message": "Display coordinate positions in HUD Layout nodes, allows you get get things exactly right.\n\nDisplays coordinates of the center of HUD elements."
+    },
+    "FateListWindow": {
+        "message": "Fate List Window"
+    },
+    "FateListWindowDescription": {
+        "message": "Displays a list of all fates that are currently active in the current zone"
+    },
+    "FateList": {
+        "message": "Fate List"
+    },
+    "UnknownLevel": {
+        "message": "Lv. ???"
+    },
+    "DutyTimer": {
+        "message": "Duty Timer"
+    },
+    "DutyTimerDescription": {
+        "message": "When completing a duty, prints the time the duty took to chat."
+    },
+    "DutyCompletedIn": {
+        "message": "Duty completed in"
+    },
+    "ListInventory": {
+        "message": "Inventory List Window"
+    },
+    "ListInventoryDescription": {
+        "message": "Adds a window that displays your inventory as a list, with toggleable filters."
+    },
+    "InventoryList": {
+        "message": "Inventory List"
+    },
+    "GearsetRedirect": {
+        "message": "Gearset Redirect"
+    },
+    "GearsetRedirectDescription": {
+        "message": "When equipping gearsets, set alternative sets to load depending on what zone you are in."
+    },
+    "GearsetRedirectConfig": {
+        "message": "Gearset Redirect Config"
+    },
+    "ClearFlag": {
+        "message": "Clear Flag"
+    },
+    "ClearFlagDescription": {
+        "message": "Allows you to right click the minimap to clear the currently set flag marker."
+    },
+    "FasterScroll": {
+        "message": "Faster Scrollbars"
+    },
+    "FasterScrollDescription": {
+        "message": "Increases the speed of all scrollbars."
+    },
+    "FasterScrollConfig": {
+        "message": "Faster Scrollbars Config"
+    },
+    "ResourceBarPercentages": {
+        "message": "Show Resource Bars as Percentages"
+    },
+    "ResourceBarPercentagesDescription": {
+        "message": "Displays HP, MP, GP and CP bars as percentages instead of raw values."
+    },
+    "ResourceBarPercentagesConfig": {
+        "message": "Resource Bar Percentages Config"
+    },
+    "FadeLootButton": {
+        "message": "Fade Loot Button"
+    },
+    "FadeLootButtonDescription": {
+        "message": "Fades the Loot button if you've already rolled on everything available."
+    },
+    "FadeLootButtonConfig": {
+        "message": "Fade Loot Button Config"
+    },
+    "FadeUnavailableActions": {
+        "message": "Fade Unavailable Actions"
+    },
+    "FadeUnavailableActionsDescription": {
+        "message": "Fades hotbar slots when the action is not able to be cast due to missing resources, out of range, or just on cooldown.\n\nAdditionally fades actions that are not available because you are sync'd down."
+    },
+    "FadeUnavailableActionsConfig": {
+        "message": "Fade Unavailable Actions Config"
+    },
+    "FadePercentage": {
+        "message": "Fade Percentage"
+    },
+    "ReddenPercentage": {
+        "message": "Redden Percentage"
+    },
+    "ApplyTransparencyToFrame": {
+        "message": "Apply Transparency to Frame"
+    },
+    "ApplyOnlyToSyncedActions": {
+        "message": "Apply Only to Sync'd Actions"
+    },
+    "ReddenSkillsOutOfRange": {
+        "message": "Redden Skills out of Range"
+    },
+    "BetterCursor": {
+        "message": "Better Cursor"
+    },
+    "BetterCursorDescription": {
+        "message": "Draws a ring around the cursor to make it easier to see"
+    },
+    "BetterCursorConfig": {
+        "message": "Better Cursor Config"
+    },
+    "EnableAnimation": {
+        "message": "Enable Animation"
+    },
+    "HideOnLeftHoldOrRightHold": {
+        "message": "Hide on Left-Hold or Right-Hold"
+    },
+    "OnlyShowInCombat": {
+        "message": "Only show in Combat"
+    },
+    "OnlyShowInDuties": {
+        "message": "Only Show in Duties"
+    },
+    "FastMouseClick": {
+        "message": "Fast Mouse Click"
+    },
+    "FastMouseClickDescription": {
+        "message": "The game does not fire UI events for single mouse clicks whenever a double click is detected.\n\nThis game modification fixes it by always triggering the normal mouse click in addition to the double click."
+    },
+    "SelectNextLootItem": {
+        "message": "Automatically Select Next Loot Item"
+    },
+    "SelectNextLootItemDescription": {
+        "message": "Automatically advance to the next loot item after clicking Need, Greed, or Pass.\n\nNote: this modification does not automatically roll on loot."
+    },
+    "ClearTextInputs": {
+        "message": "Clear Text Inputs"
+    },
+    "ClearTextInputsDescription": {
+        "message": "Allows you to clear the text in a text input, by right clicking the text input."
+    },
+    "ClearSelectedDuties": {
+        "message": "Clear Selected Duties"
+    },
+    "ClearSelectedDutiesDescription": {
+        "message": "When opening the Duty Finder, deselects any selected duties."
+    },
+    "ClearSelectedDutiesConfig": {
+        "message": "Clear Selected Duties Config"
+    },
+    "DisableWhenUnrestricted": {
+        "message": "Disable when Unrestricted"
+    },
+    "HUDPresets": {
+        "message": "HUD Presets"
+    },
+    "HUDPresetsDescription": {
+        "message": "Provides preset HUD layouts that can be quickly applied."
+    },
+    "HUDPresetName": {
+        "message": "HUD Preset Name"
+    },
+    "VanillaPlusHUDPresets": {
+        "message": "[VanillaPlus] HUD Presets"
+    },
+    "SelectHUDLayoutPreset": {
+        "message": "Select a HUD Layout Preset"
+    },
+    "Load": {
+        "message": "Load"
+    },
+    "LoadSelectedPreset": {
+        "message": "Load selected preset"
+    },
+    "Overwrite": {
+        "message": "Overwrite"
+    },
+    "OverwriteSelectedPreset": {
+        "message": "Overwrite selected preset"
+    },
+    "Delete": {
+        "message": "Delete"
+    },
+    "WorkInProgressDeletePreset": {
+        "message": "Work in Progress\nManually delete preset files for now"
+    },
+    "Save": {
+        "message": "Save"
+    },
+    "ClickSaveAboveFirst": {
+        "message": "Click save above before saving a new preset"
+    },
+    "SaveCurrentUIAsNewPreset": {
+        "message": "Save Current UI as a new preset"
+    },
+    "NewPresetName": {
+        "message": "New Preset Name"
+    },
+    "HideUnwantedBanners": {
+        "message": "Hide Unwanted Banners"
+    },
+    "HideUnwantedBannersDescription": {
+        "message": "Prevents large text banners from appearing and playing their sound effect."
+    },
+    "HideUnwantedBannersConfig": {
+        "message": "Hide Unwanted Banners Config"
+    },
+    "HideGuildhestObjectivePopup": {
+        "message": "Hide Guildhest Objective Popup"
+    },
+    "HideGuildhestObjectivePopupDescription": {
+        "message": "When starting a guildhest this modification will prevent the popup window that contains the instructions on how to do the Guildhest.\n\nYou will still receive the chat message with the guildhest explanation."
+    },
+    "BetterQuestMapLink": {
+        "message": "Better Quest Map Link"
+    },
+    "BetterQuestMapLinkDescription": {
+        "message": "When clicking on quest links, open the actual map the quest is for instead of the generic world map."
+    },
+    "EnhancedLootWindow": {
+        "message": "Enhanced Loot Window"
+    },
+    "EnhancedLootWindowDescription": {
+        "message": "Adds indicators to loot window items to indicate if you have unlocked that item before, or if the item is obtainable."
+    },
+    "EnhancedLootWindowConfig": {
+        "message": "Enhanced Loot Window Config"
+    },
+    "MarkUnobtainableItems": {
+        "message": "Mark Unobtainable Items"
+    },
+    "MarkAlreadyUnlockedItems": {
+        "message": "Mark Already Unlocked Items"
+    },
+    "MissingJobStoneLockout": {
+        "message": "Missing Job Stone Lockout"
+    },
+    "MissingJobStoneLockoutDescription": {
+        "message": "Prevents queuing for a duty while you are missing a jobstone."
+    },
+    "MissingJobStone": {
+        "message": "Missing Job Stone"
+    },
+    "ClickToDisableLock": {
+        "message": "Click to disable lock"
+    },
+    "ClicksRemaining": {
+        "message": "clicks remaining"
+    },
+    "OpenGlamourDresserToCurrentJob": {
+        "message": "Open Glamour Dresser to Current Job"
+    },
+    "OpenGlamourDresserToCurrentJobDescription": {
+        "message": "When opening the glamour dresser, the tab for your current job will be automatically selected."
+    },
+    "PartyFinderPresets": {
+        "message": "Party Finder Presets"
+    },
+    "PartyFinderPresetsDescription": {
+        "message": "Allows you to save an use presets for the Party Finder Recruitment window"
+    },
+    "PartyFinderPreset": {
+        "message": "Party Finder Preset"
+    },
+    "SavePreset": {
+        "message": "Save Preset"
+    },
+    "SaveCurrentSettingsToPreset": {
+        "message": "[VanillaPlus]: Save current settings to a preset"
+    },
+    "SelectPreset": {
+        "message": "[VanillaPlus]: Select a preset"
+    },
+    "PetSizeContextMenu": {
+        "message": "Pet Size Context Menu"
+    },
+    "PetSizeContextMenuDescription": {
+        "message": "When right clicking on a pet, or a player with a pet, show a context menu entry for changing the pet size"
+    },
+    "PetSize": {
+        "message": "Pet Size"
+    },
+    "Small": {
+        "message": "Small"
+    },
+    "Medium": {
+        "message": "Medium"
+    },
+    "Large": {
+        "message": "Large"
+    },
+    "QuestListWindow": {
+        "message": "Quest List Window"
+    },
+    "QuestListWindowDescription": {
+        "message": "Displays a list of all available quests for the currently occupied zone."
+    },
+    "QuestList": {
+        "message": "Quest List"
+    },
+    "RecentlyLootedWindow": {
+        "message": "Recently Looted Window"
+    },
+    "RecentlyLootedWindowDescription": {
+        "message": "Adds a window that shows a scrollable list of all items that you have looted this session.\n\nFilters exist to help you distinguish between what types of items you are after."
+    },
+    "RecentlyLootedItems": {
+        "message": "Recently Looted Items"
+    },
+    "InstancedWaymarks": {
+        "message": "Instanced Waymarks"
+    },
+    "InstancedWaymarksDescription": {
+        "message": "Enables the use of all saved Waymark Slots per duty, instead of sharing them across all duties, with the option to name each slot."
+    },
+    "HideMpBars": {
+        "message": "Hide MP Bars"
+    },
+    "HideMpBarsDescription": {
+        "message": "Hides MP Bars in party list for jobs that don't use MP."
+    },
+    "ForcedCutsceneSounds": {
+        "message": "Forced Cutscene Sounds"
+    },
+    "ForcedCutsceneSoundsDescription": {
+        "message": "Automatically unmutes selected sound channels in cutscenes."
+    },
+    "ForcedCutsceneSoundsConfig": {
+        "message": "Forced Cutscene Sounds Config"
+    },
+    "RestoreMuteStateAfterCutscene": {
+        "message": "Restore Mute State After Cutscene"
+    },
+    "UnmuteMasterVolume": {
+        "message": "Unmute Master Volume"
+    },
+    "UnmuteBGM": {
+        "message": "Unmute BGM"
+    },
+    "UnmuteSoundEffects": {
+        "message": "Unmute Sound Effects"
+    },
+    "UnmuteVoice": {
+        "message": "Unmute Voice"
+    },
+    "UnmuteAmbientSounds": {
+        "message": "Unmute Ambient Sounds"
+    },
+    "UnmuteSystemSounds": {
+        "message": "Unmute System Sounds"
+    },
+    "UnmutePerformance": {
+        "message": "Unmute Performance"
+    },
+    "DisableInMSQRoulette": {
+        "message": "Disable in MSQ Roulette"
+    },
+    "FocusTargetLock": {
+        "message": "Focus Target Lock"
+    },
+    "FocusTargetLockDescription": {
+        "message": "When a duty recommences, restores your previous focus target."
+    },
+    "DraggableWindowDeadSpace": {
+        "message": "Draggable Window Dead Space"
+    },
+    "DraggableWindowDeadSpaceDescription": {
+        "message": "Allows clicking and dragging on window dead space to move the window."
+    },
+    "CastBarAetheryteNames": {
+        "message": "Cast Bar Aetheryte Names"
+    },
+    "CastBarAetheryteNamesDescription": {
+        "message": "Replaces the name of the action 'Teleport' with the Aetheryte name of your destination."
+    },
+    "BetterInterruptableCastBars": {
+        "message": "Better Interruptable Castbars"
+    },
+    "BetterInterruptableCastBarsDescription": {
+        "message": "Makes enemy interruptable castbars much more noticeable.\n\nAdditionally skills that can interrupt the cast are indicated on your hotbar."
+    },
+    "PartyList": {
+        "message": "Party List"
+    },
+    "ParameterWidget": {
+        "message": "Parameter Widget"
+    },
+    "Extra": {
+        "message": "Extra"
+    },
+    "PercentageSign": {
+        "message": "Percentage Sign"
+    },
+    "PercentageFormat": {
+        "message": "Percentage Format"
+    },
+    "StyleSettings": {
+        "message": "Style Settings"
+    },
+    "ShowOnPartyList": {
+        "message": "Show on Party List"
+    },
+    "ApplyToPlayer": {
+        "message": "Apply to Player"
+    },
+    "ApplyToPartyMembers": {
+        "message": "Apply to Party Members"
+    },
+    "ChangeHP": {
+        "message": "Change HP"
+    },
+    "ChangeMP": {
+        "message": "Change MP"
+    },
+    "ChangeGP": {
+        "message": "Change GP"
+    },
+    "ChangeCP": {
+        "message": "Change CP"
+    },
+    "ShowOnParameterWidget": {
+        "message": "Show on Parameter Widget"
+    },
+    "DeadOrAliveMode": {
+        "message": "Dead or Alive Mode"
+    },
+    "ShowPercentageSign": {
+        "message": "Show Percentage Sign %"
+    },
+    "DecimalPlaces": {
+        "message": "Decimal Places"
+    },
+    "ShowDecimalsOnlyBelow100": {
+        "message": "Show Decimals Only While Below 100%"
+    },
+    "Alive": {
+        "message": "Alive"
+    },
+    "Dead": {
+        "message": "Dead"
+    },
+    "FeatureToggles": {
+        "message": "Feature Toggles"
+    },
+    "IconSelection": {
+        "message": "Icon Selection"
+    },
+    "TargetCastBarStyleCombined": {
+        "message": "Target Castbar Style (Combined)"
+    },
+    "TargetCastBarStyleSeparate": {
+        "message": "Target Castbar Style (Separate)"
+    },
+    "FocusTargetCastBarStyle": {
+        "message": "Focus Target Castbar Style"
+    },
+    "NameplateCastBarStyle": {
+        "message": "Nameplate Castbar Style"
+    },
+    "Special": {
+        "message": "Special"
+    },
+    "SpeedMultiplier": {
+        "message": "Speed Multiplier"
+    },
+    "ZoneSearch": {
+        "message": "Zone Search"
+    },
+    "GearsetSearch": {
+        "message": "Gearset Search"
+    },
+    "Position": {
+        "message": "Position"
+    },
+    "AddNewGearsetRedirection": {
+        "message": "Add New Gearset Redirection"
+    },
+    "Gearset": {
+        "message": "Gearset"
+    },
+    "SelectGearset": {
+        "message": "Select Gearset"
+    },
+    "Zone": {
+        "message": "Zone"
+    },
+    "SelectZone": {
+        "message": "Select Zone"
+    },
+    "NothingSelected": {
+        "message": "Nothing Selected"
+    },
+    "ModificationTypeDebug": {
+        "message": "Debug"
+    },
+    "ModificationTypeCustomNativeWindows": {
+        "message": "Custom Native Windows"
+    },
+    "ModificationTypeUIModification": {
+        "message": "UI Modification"
+    },
+    "ModificationTypeGameBehaviorModification": {
+        "message": "Game Behavior Modification"
+    },
+    "ModificationTypeCustomNativeOverlay": {
+        "message": "Custom Native Overlay"
+    }
+}

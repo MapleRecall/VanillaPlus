@@ -7,8 +7,8 @@ namespace VanillaPlus.Features.BetterQuestMapLink;
 
 public unsafe class BetterQuestMapLink : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Better Quest Map Link",
-        Description = "When clicking on quest links, open the actual map the quest is for instead of the generic world map.",
+        DisplayName = Strings.BetterQuestMapLink,
+        Description = Strings.BetterQuestMapLinkDescription,
         Type = ModificationType.GameBehavior,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

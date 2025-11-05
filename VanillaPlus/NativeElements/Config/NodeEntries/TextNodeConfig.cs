@@ -20,7 +20,7 @@ public class TextNodeConfig : NodeConfig<TextNode> {
         colorPickerAddon = new ColorPickerAddon {
             NativeController = System.NativeController,
             InternalName = "ColorPicker",
-            Title = "Color Picker",
+            Title = Strings.ColorPicker,
         };
     }
 
@@ -50,7 +50,7 @@ public class TextNodeConfig : NodeConfig<TextNode> {
         };
 
         var labelNode = new LabelTextNode {
-            String = "Text Color",
+            String = Strings.TextColor,
             Size = new Vector2(100.0f, 28.0f),
         };
         System.NativeController.AttachNode(labelNode, container);
@@ -96,7 +96,7 @@ public class TextNodeConfig : NodeConfig<TextNode> {
         };
 
         var labelNode = new LabelTextNode {
-            String = "Text Outline",
+            String = Strings.TextOutline,
             Size = new Vector2(100.0f, 28.0f),
         };
         System.NativeController.AttachNode(labelNode, container);
@@ -143,7 +143,7 @@ public class TextNodeConfig : NodeConfig<TextNode> {
         };
 
         var labelNode = new LabelTextNode {
-            String = "Font Size",
+            String = Strings.FontSize,
             Size = new Vector2(100.0f, 28.0f),
         };
         container.AddNode(labelNode);
@@ -173,7 +173,7 @@ public class TextNodeConfig : NodeConfig<TextNode> {
         };
         
         var labelNode = new LabelTextNode {
-            String = "Font",
+            String = Strings.Font,
             Size = new Vector2(100.0f, 28.0f),
         };
         container.AddNode(labelNode);
@@ -205,7 +205,7 @@ public class TextNodeConfig : NodeConfig<TextNode> {
         };
         
         var labelNode = new LabelTextNode {
-            String = "Alignment",
+            String = Strings.Alignment,
             Size = new Vector2(100.0f, 28.0f),
         };
         container.AddNode(labelNode);

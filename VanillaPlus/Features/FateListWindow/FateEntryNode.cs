@@ -129,7 +129,7 @@ public unsafe class FateEntryNode : SimpleComponentNode {
                 levelNode.String = $"Lv. {value.Level}-{value.MaxLevel}";
             }
             else {
-                levelNode.String = "Lv. ???";
+                levelNode.String = Strings.UnknownLevel;
             }
            
             progressTextNode.String = $"{value.Progress}%";

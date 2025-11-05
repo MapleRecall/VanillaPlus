@@ -11,8 +11,8 @@ namespace VanillaPlus.Features.FateListWindow;
 
 public class FateListWindow : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Fate List Window",
-        Description = "Displays a list of all fates that are currently active in the current zone",
+        DisplayName = Strings.FateListWindow,
+        Description = Strings.FateListWindowDescription,
         Type = ModificationType.NewWindow,
         Authors = ["MidoriKami"],
         ChangeLog = [
@@ -31,7 +31,7 @@ public class FateListWindow : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(300.0f, 400.0f),
             InternalName = "FateList",
-            Title = "Fate List",
+            Title = Strings.FateList,
             OpenCommand = "/fatelist",
             UpdateListFunction = UpdateList,
         };

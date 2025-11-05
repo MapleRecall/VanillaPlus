@@ -12,8 +12,8 @@ namespace VanillaPlus.Features.ListInventory;
 
 public class ListInventory : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Inventory List Window",
-        Description = "Adds a window that displays your inventory as a list, with toggleable filters.",
+        DisplayName = Strings.ListInventory,
+        Description = Strings.ListInventoryDescription,
         Type = ModificationType.NewWindow,
         Authors = [ "MidoriKami" ],
         ChangeLog = [
@@ -38,7 +38,7 @@ public class ListInventory : GameModification {
         addonListInventory = new SearchableNodeListAddon {
             NativeController = System.NativeController,
             InternalName = "ListInventory",
-            Title = "Inventory List",
+            Title = Strings.InventoryList,
             Size = new Vector2(450.0f, 700.0f),
             OnFilterUpdated = OnFilterUpdated,
             OnSearchUpdated = OnSearchUpdated,

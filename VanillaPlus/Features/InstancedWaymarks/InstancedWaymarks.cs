@@ -22,8 +22,8 @@ namespace VanillaPlus.Features.InstancedWaymarks;
 
 public unsafe class InstancedWaymarks : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Instanced Waymarks",
-        Description = "Enables the use of all saved Waymark Slots per duty, instead of sharing them across all duties, with the option to name each slot.",
+        DisplayName = Strings.InstancedWaymarks,
+        Description = Strings.InstancedWaymarksDescription,
         Type = ModificationType.GameBehavior,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

@@ -11,8 +11,8 @@ namespace VanillaPlus.Features.HideMpBars;
 
 public unsafe class HideMpBars : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Hide MP Bars",
-        Description = "Hides MP Bars in party list for jobs that don't use MP.",
+        DisplayName = Strings.HideMpBars,
+        Description = Strings.HideMpBarsDescription,
         Type = ModificationType.UserInterface,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

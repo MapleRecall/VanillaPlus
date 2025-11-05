@@ -9,8 +9,8 @@ namespace VanillaPlus.Features.GearsetRedirect;
 
 public unsafe class GearsetRedirect : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Gearset Redirect",
-        Description = "When equipping gearsets, set alternative sets to load depending on what zone you are in.",
+        DisplayName = Strings.GearsetRedirect,
+        Description = Strings.GearsetRedirectDescription,
         Type = ModificationType.GameBehavior,
         Authors = [ "MidoriKami" ],
         ChangeLog = [

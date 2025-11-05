@@ -7,8 +7,8 @@ namespace VanillaPlus.Features.OpenGlamourDresserToCurrentJob;
 
 public class OpenGlamourDresserToCurrentJob : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Open Glamour Dresser to Current Job",
-        Description = "When opening the glamour dresser, the tab for your current job will be automatically selected.",
+        DisplayName = Strings.OpenGlamourDresserToCurrentJob,
+        Description = Strings.OpenGlamourDresserToCurrentJobDescription,
         Type = ModificationType.GameBehavior,
         Authors = ["MidoriKami"],
         ChangeLog = [

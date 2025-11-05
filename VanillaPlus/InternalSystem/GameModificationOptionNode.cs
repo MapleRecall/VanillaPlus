@@ -58,7 +58,7 @@ public class GameModificationOptionNode : SimpleComponentNode {
             NodeId = 5,
             IconId = 61502,
             FitTexture = true,
-            Tooltip = "Failed to load, this module has been disabled",
+            Tooltip = Strings.FailedToLoadDisabled,
         };
         System.NativeController.AttachNode(erroringImageNode, this);
 
@@ -75,7 +75,7 @@ public class GameModificationOptionNode : SimpleComponentNode {
             NodeId = 7,
             IconId = 60073,
             FitTexture = true,
-            Tooltip = "Caution, this feature is experimental.\nMay contain bugs or crash your game.",
+            Tooltip = Strings.ExperimentalWarning,
         };
         System.NativeController.AttachNode(experimentalImageNode, this);
         
@@ -92,7 +92,7 @@ public class GameModificationOptionNode : SimpleComponentNode {
         reloadButtonNode = new CircleButtonNode {
             NodeId = 10,
             Icon = ButtonIcon.Refresh,
-            Tooltip = "Retry compatability check",
+            Tooltip = Strings.RetryCompatibilityCheck,
             OnClick = () => {
                 System.ModificationManager.ReloadConflictedModules();
                 reloadButtonNode?.HideTooltip();
@@ -103,7 +103,7 @@ public class GameModificationOptionNode : SimpleComponentNode {
         configButtonNode = new CircleButtonNode {
             NodeId = 9,
             Icon = ButtonIcon.GearCog,
-            Tooltip = "Open configuration window",
+            Tooltip = Strings.OpenConfigurationWindow,
         };
         System.NativeController.AttachNode(configButtonNode, this);
 

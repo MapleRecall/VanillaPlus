@@ -164,7 +164,7 @@ public sealed unsafe partial class PerfectTails {
 
         if (values == Error) {
             return new SeStringBuilder()
-                .AddText("Line Chances: ")
+                .AddText(Strings.LineChances)
                 .AddUiForeground("error ", 704)
                 .AddUiForeground("error ", 704)
                 .AddUiForeground("error ", 704)
@@ -173,7 +173,7 @@ public sealed unsafe partial class PerfectTails {
 
         var valuePayloads = StringFormatDoubles(values);
         var seString = new SeStringBuilder()
-            .AddText("Line Chances: ");
+            .AddText(Strings.LineChances);
 
         if (samples != null) {
             foreach (var (value, sample, valuePayload) in Enumerable.Range(0, values.Length).Select(i => (values[i], samples[i], valuePayloads[i]))) {
@@ -197,7 +197,7 @@ public sealed unsafe partial class PerfectTails {
                 seString.AddText("  ");
             }
 
-            seString.AddText("\rShuffle Average: ");
+            seString.AddText("\r" + Strings.ShuffleAverage);
             seString.AddText(string.Join(" ", StringFormatDoubles(samples)));
         }
         else {

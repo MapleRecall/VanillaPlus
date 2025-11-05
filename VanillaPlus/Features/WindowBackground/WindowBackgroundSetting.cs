@@ -6,7 +6,7 @@ using KamiToolKit.Addons.Interfaces;
 namespace VanillaPlus.Features.WindowBackground;
 
 public class WindowBackgroundSetting : IInfoNodeData {
-    public const string InvalidName = "Window not Set";
+    public static string InvalidName => Strings.WindowNotSet;
 
     public string AddonName { get; set; } = InvalidName;
     public Vector4 Color { get; set; } = KnownColor.Black.Vector() with { W = 66.0f };

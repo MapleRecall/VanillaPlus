@@ -1,0 +1,887 @@
+{
+    "PluginTitle": {
+        "message": "Vanilla Plus 改変ブラウザー"
+    },
+    "OpenModificationBrowser": {
+        "message": "ゲーム改変ブラウザーを開く"
+    },
+    "WindowSystemName": {
+        "message": "VanillaPlus"
+    },
+    "ChangelogBrowserTitle": {
+        "message": "Vanilla Plus 更新履歴ブラウザー"
+    },
+    "PleaseSelectOption": {
+        "message": "左側からオプションを選択してください"
+    },
+    "Changelog": {
+        "message": "更新履歴"
+    },
+    "FailedToLoadDisabled": {
+        "message": "読み込み失敗、このモジュールは無効になりました"
+    },
+    "ExperimentalWarning": {
+        "message": "注意：この機能は実験的なものです。\nバグが含まれているか、ゲームがクラッシュする可能性があります。"
+    },
+    "RetryCompatibilityCheck": {
+        "message": "互換性チェックを再試行"
+    },
+    "OpenConfigurationWindow": {
+        "message": "設定ウィンドウを開く"
+    },
+    "NoOptionSelected": {
+        "message": "オプションが選択されていません"
+    },
+    "WindowNotSet": {
+        "message": "ウィンドウが設定されていません"
+    },
+    "BackgroundColor": {
+        "message": "背景色"
+    },
+    "Color": {
+        "message": "色"
+    },
+    "PaddingSize": {
+        "message": "余白サイズ"
+    },
+    "Keybind": {
+        "message": "キーバインド"
+    },
+    "ChangeKeybind": {
+        "message": "キーバインドを変更"
+    },
+    "WindowSize": {
+        "message": "ウィンドウサイズ"
+    },
+    "Width": {
+        "message": "幅"
+    },
+    "Height": {
+        "message": "高さ"
+    },
+    "ChangesWontTakeEffect": {
+        "message": "変更はウィンドウを再度開くまで反映されません"
+    },
+    "Disable": {
+        "message": "無効"
+    },
+    "Enable": {
+        "message": "有効"
+    },
+    "ColorPickerWindow": {
+        "message": "カラーピッカーウィンドウ"
+    },
+    "ColorPicker": {
+        "message": "カラーピッカー"
+    },
+    "TextColor": {
+        "message": "テキストカラー"
+    },
+    "TextOutline": {
+        "message": "テキストの縁取り"
+    },
+    "FontSize": {
+        "message": "フォントサイズ"
+    },
+    "Font": {
+        "message": "フォント"
+    },
+    "Alignment": {
+        "message": "配置"
+    },
+    "SearchPlaceholder": {
+        "message": "検索 . . ."
+    },
+    "SupportsRegexSearch": {
+        "message": "[VanillaPlus]: 正規表現検索に対応"
+    },
+    "StartInputWithDollar": {
+        "message": "'$'から始めると説明文で検索できます"
+    },
+    "Config": {
+        "message": "設定"
+    },
+    "Settings": {
+        "message": "設定"
+    },
+    "General": {
+        "message": "全般"
+    },
+    "Style": {
+        "message": "スタイル"
+    },
+    "Toggles": {
+        "message": "トグル"
+    },
+    "Animations": {
+        "message": "アニメーション"
+    },
+    "Colors": {
+        "message": "色"
+    },
+    "Icon": {
+        "message": "アイコン"
+    },
+    "Visibility": {
+        "message": "表示"
+    },
+    "Functions": {
+        "message": "機能"
+    },
+    "KeybindConfigWindow": {
+        "message": "キーバインド設定ウィンドウ"
+    },
+    "ConfigurationWindow": {
+        "message": "設定ウィンドウ"
+    },
+    "PresetConfigManager": {
+        "message": "プリセット設定マネージャー"
+    },
+    "HaselTweaksCompatibilityError": {
+        "message": "この機能のオリジナル版がHaselTweaksプラグインで既に有効になっています。\n\nID: {0}"
+    },
+    "SimpleTweaksCompatibilityError": {
+        "message": "この機能のオリジナル版がSimple Tweaksプラグインで既に有効になっています。\n\nID: {0}"
+    },
+    "PluginCompatibilityError": {
+        "message": "この機能のオリジナル版は現在有効なプラグインからのものです: {0}"
+    },
+    "CurrencyOverlay": {
+        "message": "通貨オーバーレイ"
+    },
+    "CurrencyOverlayDescription": {
+        "message": "UIオーバーレイに追加の通貨を表示できます。\n\n最小値と最大値を設定して警告を出すこともできます。"
+    },
+    "CurrencyOverlayConfig": {
+        "message": "通貨オーバーレイ設定"
+    },
+    "ItemSearch": {
+        "message": "アイテム検索"
+    },
+    "WarnWhenBelowLimit": {
+        "message": "下限を下回ったら警告"
+    },
+    "WarnWhenAboveLimit": {
+        "message": "上限を超えたら警告"
+    },
+    "ReverseIconPosition": {
+        "message": "アイコンの位置を反転"
+    },
+    "EnableMovingOverlayElement": {
+        "message": "オーバーレイ要素の移動を有効化"
+    },
+    "Scale": {
+        "message": "スケール"
+    },
+    "WindowBackgroundColorPicker": {
+        "message": "ウィンドウ背景カラーピッカー"
+    },
+    "WondrousTailsProbabilities": {
+        "message": "奇跡の確率表示"
+    },
+    "WondrousTailsProbabilitiesDescription": {
+        "message": "奇跡の秘文帳の現在のライン確率と平均シャッフル確率を表示します。"
+    },
+    "LineChances": {
+        "message": "ライン確率: "
+    },
+    "ShuffleAverage": {
+        "message": "シャッフル平均: "
+    },
+    "Alphabetical": {
+        "message": "アルファベット順"
+    },
+    "Id": {
+        "message": "ID"
+    },
+    "WindowBackgrounds": {
+        "message": "ウィンドウ背景"
+    },
+    "WindowBackgroundsDescription": {
+        "message": "任意のネイティブウィンドウに背景を追加できます。\n\n例: キャストバー、ターゲットのHPバー、所持品ウィジェット、ToDoリスト"
+    },
+    "WindowBackgroundsConfig": {
+        "message": "ウィンドウ背景設定"
+    },
+    "WindowSearch": {
+        "message": "ウィンドウ検索"
+    },
+    "InputDesiredKeyCombo": {
+        "message": "使用するキーコンボを入力"
+    },
+    "PressAKeyCombo": {
+        "message": "キーコンボを押してください"
+    },
+    "KeybindConflicts": {
+        "message": "キーバインドの競合"
+    },
+    "NoConflictsDetected": {
+        "message": "競合は検出されませんでした"
+    },
+    "Confirm": {
+        "message": "確定"
+    },
+    "Cancel": {
+        "message": "キャンセル"
+    },
+    "InputNewName": {
+        "message": "新しい名前を入力"
+    },
+    "Apply": {
+        "message": "適用"
+    },
+    "NoPresetsSaved": {
+        "message": "保存されたプリセットはありません"
+    },
+    "DontUsePreset": {
+        "message": "プリセットを使用しない"
+    },
+    "TargetCastBarCountdown": {
+        "message": "ターゲットキャストバーカウントダウン"
+    },
+    "TargetCastBarCountdownDescription": {
+        "message": "ターゲットのキャストバーに残り詠唱時間を追加表示します。"
+    },
+    "TargetCastBarCountdownConfig": {
+        "message": "ターゲットキャストバーカウントダウン設定"
+    },
+    "ShowOnPrimaryTargetCastbar": {
+        "message": "メインターゲットのキャストバーに表示"
+    },
+    "ShowOnFocusTargetCastbar": {
+        "message": "フォーカスターゲットのキャストバーに表示"
+    },
+    "ShowOnNameplateTargetCastbar": {
+        "message": "ネームプレートのキャストバーに表示"
+    },
+    "SuppressDialogAdvance": {
+        "message": "会話自動送り抑制"
+    },
+    "SuppressDialogAdvanceDescription": {
+        "message": "会話ボックス自体をクリックしない限り、カットシーンの会話が進まないようにします。"
+    },
+    "SuppressDialogAdvanceConfig": {
+        "message": "会話自動送り抑制設定"
+    },
+    "ApplyOnlyInCutscenes": {
+        "message": "カットシーンのみに適用"
+    },
+    "StickyShopCategories": {
+        "message": "ショップカテゴリーの記憶"
+    },
+    "StickyShopCategoriesDescription": {
+        "message": "特定のベンダー、リテイナーマーケット、軍票交換窓口などで選択したカテゴリーとサブカテゴリーを記憶します。"
+    },
+    "SkipTeleportConfirm": {
+        "message": "テレポ確認スキップ"
+    },
+    "SkipTeleportConfirmDescription": {
+        "message": "マップからテレポを使用する際の「[場所]へテレポしますか？ [金額]ギル」の確認ポップアップをスキップします。"
+    },
+    "SaddlebagSearchBar": {
+        "message": "チョコボかばん検索バー"
+    },
+    "SaddlebagSearchBarDescription": {
+        "message": "チョコボかばんウィンドウに検索バーを追加します。"
+    },
+    "RetainerSearchBar": {
+        "message": "リテイナー検索バー"
+    },
+    "RetainerSearchBarDescription": {
+        "message": "リテイナーウィンドウに検索バーを追加します。"
+    },
+    "ResetInventoryTab": {
+        "message": "所持品タブのリセット"
+    },
+    "ResetInventoryTabDescription": {
+        "message": "開いたときに所持品を自動的に最初のタブにリセットします。"
+    },
+    "MiniCactpotHelper": {
+        "message": "ミニくじテンダー補助"
+    },
+    "MiniCactpotHelperDescription": {
+        "message": "ミニくじテンダーで次にどのマスを開けるべきかを示します。"
+    },
+    "MiniCactpotHelperConfig": {
+        "message": "ミニくじテンダー補助設定"
+    },
+    "EnableAnimations": {
+        "message": "アニメーションを有効化"
+    },
+    "MacroTooltips": {
+        "message": "マクロツールチップ"
+    },
+    "MacroTooltipsDescription": {
+        "message": "'/macroicon'で'action'が設定されているマクロにマウスカーソルを合わせたときにアクションツールチップを表示します"
+    },
+    "MacroLineNumbers": {
+        "message": "マクロ行番号"
+    },
+    "MacroLineNumbersDescription": {
+        "message": "ユーザーマクロウィンドウに行番号を追加します。"
+    },
+    "InventorySearchBar": {
+        "message": "所持品検索バー"
+    },
+    "InventorySearchBarDescription": {
+        "message": "所持品ウィンドウに検索バーを追加します。"
+    },
+    "ArmourySearchBar": {
+        "message": "武具庫検索バー"
+    },
+    "ArmourySearchBarDescription": {
+        "message": "武具庫ウィンドウに検索バーを追加します。"
+    },
+    "LocationDisplay": {
+        "message": "位置情報表示"
+    },
+    "LocationDisplayDescription": {
+        "message": "サーバー情報バーに現在の位置情報を表示します。"
+    },
+    "LocationDisplayConfig": {
+        "message": "位置情報表示設定"
+    },
+    "Ward": {
+        "message": "{0}区"
+    },
+    "Subdivision": {
+        "message": "サブディビジョン"
+    },
+    "Apartment": {
+        "message": "アパルトメント"
+    },
+    "Lobby": {
+        "message": "ロビー"
+    },
+    "Plot": {
+        "message": "{0}番地"
+    },
+    "Room": {
+        "message": "{0}号室"
+    },
+    "LocationFormatInstruction": {
+        "message": "下のテキストボックスを使用してテキストのフォーマットを定義します。\n記号 {0} {1} {2} {3} {4} を使用して、以下の値を文字列に配置できます\n\n{0} - リージョン (例: 北洋諸島)\n{1} - テリトリー (例: オールド・シャーレアン)\n{2} - エリア (例: 賢人の設計)\n{3} - サブエリア (例: オールド・シャーレアン エーテライトプラザ)\n{4} - ハウジング区 (例: 14区)"
+    },
+    "InfoBarEntry": {
+        "message": "情報バー項目"
+    },
+    "InfoBarTooltip": {
+        "message": "情報バーツールチップ"
+    },
+    "ResetToDefault": {
+        "message": "デフォルトに戻す"
+    },
+    "ShowInstanceNumber": {
+        "message": "インスタンス番号を表示"
+    },
+    "ShowPreciseHousingLocation": {
+        "message": "詳細なハウジング位置を表示"
+    },
+    "HUDCoordinates": {
+        "message": "HUD座標"
+    },
+    "HUDCoordinatesDescription": {
+        "message": "HUDレイアウトノードに座標位置を表示して、完璧に正確な位置調整を可能にします。\n\nHUD要素の中心の座標を表示します。"
+    },
+    "FateListWindow": {
+        "message": "F.A.T.E.リストウィンドウ"
+    },
+    "FateListWindowDescription": {
+        "message": "現在のエリアで現在アクティブな全てのF.A.T.E.のリストを表示します"
+    },
+    "FateList": {
+        "message": "F.A.T.E.リスト"
+    },
+    "UnknownLevel": {
+        "message": "Lv. ???"
+    },
+    "DutyTimer": {
+        "message": "コンテンツタイマー"
+    },
+    "DutyTimerDescription": {
+        "message": "コンテンツ完了時に、チャットへコンテンツクリア時間を出力します。"
+    },
+    "DutyCompletedIn": {
+        "message": "コンテンツクリア時間"
+    },
+    "ListInventory": {
+        "message": "所持品リストウィンドウ"
+    },
+    "ListInventoryDescription": {
+        "message": "所持品をリスト形式で表示するウィンドウを追加します。切り替え可能なフィルター付き。"
+    },
+    "InventoryList": {
+        "message": "所持品リスト"
+    },
+    "GearsetRedirect": {
+        "message": "ギアセットリダイレクト"
+    },
+    "GearsetRedirectDescription": {
+        "message": "ギアセット装備時に、いるエリアに応じて代替セットを読み込むように設定します。"
+    },
+    "GearsetRedirectConfig": {
+        "message": "ギアセットリダイレクト設定"
+    },
+    "ClearFlag": {
+        "message": "フラグクリア"
+    },
+    "ClearFlagDescription": {
+        "message": "ミニマップを右クリックして現在設定されているフラグマーカーをクリアできるようにします。"
+    },
+    "FasterScroll": {
+        "message": "高速スクロールバー"
+    },
+    "FasterScrollDescription": {
+        "message": "全てのスクロールバーの速度を上げます。"
+    },
+    "FasterScrollConfig": {
+        "message": "高速スクロール設定"
+    },
+    "ResourceBarPercentages": {
+        "message": "リソースバーをパーセンテージで表示"
+    },
+    "ResourceBarPercentagesDescription": {
+        "message": "HP、MP、GP、CPバーを数値の代わりにパーセンテージで表示します。"
+    },
+    "ResourceBarPercentagesConfig": {
+        "message": "リソースバーのパーセント表示設定"
+    },
+    "FadeLootButton": {
+        "message": "戦利品ボタンのフェード"
+    },
+    "FadeLootButtonDescription": {
+        "message": "すべての戦利品に投票済みの場合、戦利品ボタンをフェードさせます。"
+    },
+    "FadeLootButtonConfig": {
+        "message": "戦利品ボタンのフェード設定"
+    },
+    "FadeUnavailableActions": {
+        "message": "使用不可アクションのフェード"
+    },
+    "FadeUnavailableActionsDescription": {
+        "message": "リソース不足、射程外、またはリキャスト中でアクションが使用できないときにホットバースロットをフェードさせます。\n\nレベルシンクで使用できないアクションもフェードさせます。"
+    },
+    "FadeUnavailableActionsConfig": {
+        "message": "使用不可アクションのフェード設定"
+    },
+    "FadePercentage": {
+        "message": "フェード率"
+    },
+    "ReddenPercentage": {
+        "message": "赤色化率"
+    },
+    "ApplyTransparencyToFrame": {
+        "message": "フレームに透明度を適用"
+    },
+    "ApplyOnlyToSyncedActions": {
+        "message": "シンクされたアクションのみに適用"
+    },
+    "ReddenSkillsOutOfRange": {
+        "message": "射程外のスキルを赤色化"
+    },
+    "BetterCursor": {
+        "message": "改良カーソル"
+    },
+    "BetterCursorDescription": {
+        "message": "カーソルの周りに輪を描画して見やすくします"
+    },
+    "BetterCursorConfig": {
+        "message": "改良カーソル設定"
+    },
+    "EnableAnimation": {
+        "message": "アニメーションを有効化"
+    },
+    "HideOnLeftHoldOrRightHold": {
+        "message": "左クリック長押しまたは右クリック長押し時に非表示"
+    },
+    "OnlyShowInCombat": {
+        "message": "戦闘中のみ表示"
+    },
+    "OnlyShowInDuties": {
+        "message": "コンテンツ内のみ表示"
+    },
+    "FastMouseClick": {
+        "message": "高速マウスクリック"
+    },
+    "FastMouseClickDescription": {
+        "message": "ゲームはダブルクリックが検出された際に単一クリックのUIイベントを発火しません。\n\nこの改変は、ダブルクリックに加えて常に通常のマウスクリックをトリガーすることでこれを修正します。"
+    },
+    "SelectNextLootItem": {
+        "message": "次の戦利品アイテムを自動選択"
+    },
+    "SelectNextLootItemDescription": {
+        "message": "NEED、GREED、PASSをクリックした後、自動的に次の戦利品アイテムに進みます。\n\n注意：この改変は自動的に戦利品をロールしません。"
+    },
+    "ClearTextInputs": {
+        "message": "テキスト入力のクリア"
+    },
+    "ClearTextInputsDescription": {
+        "message": "テキスト入力を右クリックすることで、テキスト入力内のテキストをクリアできるようにします。"
+    },
+    "ClearSelectedDuties": {
+        "message": "選択コンテンツのクリア"
+    },
+    "ClearSelectedDutiesDescription": {
+        "message": "コンテンツファインダーを開いたときに、選択されているコンテンツの選択を解除します。"
+    },
+    "ClearSelectedDutiesConfig": {
+        "message": "選択コンテンツのクリア設定"
+    },
+    "DisableWhenUnrestricted": {
+        "message": "レベル制限解除時は無効"
+    },
+    "HUDPresets": {
+        "message": "HUDプリセット"
+    },
+    "HUDPresetsDescription": {
+        "message": "素早く適用できるプリセットHUDレイアウトを提供します。"
+    },
+    "HUDPresetName": {
+        "message": "HUDプリセット名"
+    },
+    "VanillaPlusHUDPresets": {
+        "message": "[VanillaPlus] HUDプリセット"
+    },
+    "SelectHUDLayoutPreset": {
+        "message": "HUDレイアウトプリセットを選択"
+    },
+    "Load": {
+        "message": "読み込む"
+    },
+    "LoadSelectedPreset": {
+        "message": "選択したプリセットを読み込む"
+    },
+    "Overwrite": {
+        "message": "上書き"
+    },
+    "OverwriteSelectedPreset": {
+        "message": "選択したプリセットを上書き"
+    },
+    "Delete": {
+        "message": "削除"
+    },
+    "WorkInProgressDeletePreset": {
+        "message": "開発中\n現在は手動でプリセットファイルを削除してください"
+    },
+    "Save": {
+        "message": "保存"
+    },
+    "ClickSaveAboveFirst": {
+        "message": "新しいプリセットを保存する前に上の保存ボタンをクリックしてください"
+    },
+    "SaveCurrentUIAsNewPreset": {
+        "message": "現在のUIを新しいプリセットとして保存"
+    },
+    "NewPresetName": {
+        "message": "新しいプリセット名"
+    },
+    "HideUnwantedBanners": {
+        "message": "不要なバナーを非表示"
+    },
+    "HideUnwantedBannersDescription": {
+        "message": "大きなテキストバナーが表示されるのと効果音の再生を防ぎます。"
+    },
+    "HideUnwantedBannersConfig": {
+        "message": "不要なバナーを非表示設定"
+    },
+    "HideGuildhestObjectivePopup": {
+        "message": "ギルドオーダー目的ポップアップを非表示"
+    },
+    "HideGuildhestObjectivePopupDescription": {
+        "message": "ギルドオーダー開始時に、ギルドオーダーの攻略方法が書かれたポップアップウィンドウを非表示にします。\n\nギルドオーダーの説明のチャットメッセージは引き続き受け取ります。"
+    },
+    "BetterQuestMapLink": {
+        "message": "改良クエストマップリンク"
+    },
+    "BetterQuestMapLinkDescription": {
+        "message": "クエストリンクをクリックしたときに、一般的なワールドマップの代わりにクエストの実際のマップを開きます。"
+    },
+    "EnhancedLootWindow": {
+        "message": "拡張戦利品ウィンドウ"
+    },
+    "EnhancedLootWindowDescription": {
+        "message": "戦利品ウィンドウのアイテムに、以前に取得したことがあるか、または取得可能かを示すインジケーターを追加します。"
+    },
+    "EnhancedLootWindowConfig": {
+        "message": "拡張戦利品ウィンドウ設定"
+    },
+    "MarkUnobtainableItems": {
+        "message": "取得不可アイテムをマーク"
+    },
+    "MarkAlreadyUnlockedItems": {
+        "message": "取得済みアイテムをマーク"
+    },
+    "MissingJobStoneLockout": {
+        "message": "ジョブストーン未装備ロックアウト"
+    },
+    "MissingJobStoneLockoutDescription": {
+        "message": "ジョブストーンを装備していないときのコンテンツ申請を防ぎます。"
+    },
+    "MissingJobStone": {
+        "message": "ジョブストーン未装備"
+    },
+    "ClickToDisableLock": {
+        "message": "クリックしてロックを解除"
+    },
+    "ClicksRemaining": {
+        "message": "残りクリック回数"
+    },
+    "OpenGlamourDresserToCurrentJob": {
+        "message": "ミラージュドレッサーを現在のジョブで開く"
+    },
+    "OpenGlamourDresserToCurrentJobDescription": {
+        "message": "ミラージュドレッサーを開いたときに、現在のジョブのタブが自動的に選択されます。"
+    },
+    "PartyFinderPresets": {
+        "message": "パーティ募集プリセット"
+    },
+    "PartyFinderPresetsDescription": {
+        "message": "パーティ募集ウィンドウのプリセットを保存・使用できます"
+    },
+    "PartyFinderPreset": {
+        "message": "パーティ募集プリセット"
+    },
+    "SavePreset": {
+        "message": "プリセット保存"
+    },
+    "SaveCurrentSettingsToPreset": {
+        "message": "[VanillaPlus]: 現在の設定をプリセットに保存"
+    },
+    "SelectPreset": {
+        "message": "[VanillaPlus]: プリセットを選択"
+    },
+    "PetSizeContextMenu": {
+        "message": "ペットサイズコンテキストメニュー"
+    },
+    "PetSizeContextMenuDescription": {
+        "message": "ペット、またはペットを連れているプレイヤーを右クリックしたときに、ペットサイズを変更するコンテキストメニュー項目を表示します"
+    },
+    "PetSize": {
+        "message": "ペットサイズ"
+    },
+    "Small": {
+        "message": "小"
+    },
+    "Medium": {
+        "message": "中"
+    },
+    "Large": {
+        "message": "大"
+    },
+    "QuestListWindow": {
+        "message": "クエストリストウィンドウ"
+    },
+    "QuestListWindowDescription": {
+        "message": "現在いるエリアで受注可能な全てのクエストのリストを表示します。"
+    },
+    "QuestList": {
+        "message": "クエストリスト"
+    },
+    "RecentlyLootedWindow": {
+        "message": "最近の取得品ウィンドウ"
+    },
+    "RecentlyLootedWindowDescription": {
+        "message": "このセッション中に入手した全てのアイテムのスクロール可能なリストを表示するウィンドウを追加します。\n\n探しているアイテムの種類を区別するためのフィルターがあります。"
+    },
+    "RecentlyLootedItems": {
+        "message": "最近の取得品"
+    },
+    "InstancedWaymarks": {
+        "message": "インスタンスごとのフィールドマーカー"
+    },
+    "InstancedWaymarksDescription": {
+        "message": "保存されたフィールドマーカースロットをすべてのコンテンツ間で共有するのではなく、コンテンツごとに使用できるようにし、各スロットに名前を付けるオプション付き。"
+    },
+    "HideMpBars": {
+        "message": "MPバーを非表示"
+    },
+    "HideMpBarsDescription": {
+        "message": "パーティリストで、MPを使用しないジョブのMPバーを非表示にします。"
+    },
+    "ForcedCutsceneSounds": {
+        "message": "カットシーン音声強制再生"
+    },
+    "ForcedCutsceneSoundsDescription": {
+        "message": "カットシーン中に選択したサウンドチャンネルのミュートを自動的に解除します。"
+    },
+    "ForcedCutsceneSoundsConfig": {
+        "message": "カットシーン音声強制再生設定"
+    },
+    "RestoreMuteStateAfterCutscene": {
+        "message": "カットシーン後にミュート状態を復元"
+    },
+    "UnmuteMasterVolume": {
+        "message": "マスターボリュームのミュート解除"
+    },
+    "UnmuteBGM": {
+        "message": "BGMのミュート解除"
+    },
+    "UnmuteSoundEffects": {
+        "message": "効果音のミュート解除"
+    },
+    "UnmuteVoice": {
+        "message": "ボイスのミュート解除"
+    },
+    "UnmuteAmbientSounds": {
+        "message": "環境音のミュート解除"
+    },
+    "UnmuteSystemSounds": {
+        "message": "システム音のミュート解除"
+    },
+    "UnmutePerformance": {
+        "message": "楽器演奏のミュート解除"
+    },
+    "DisableInMSQRoulette": {
+        "message": "メインクエストルーレットでは無効"
+    },
+    "FocusTargetLock": {
+        "message": "フォーカスターゲットロック"
+    },
+    "FocusTargetLockDescription": {
+        "message": "コンテンツ再開時に、前のフォーカスターゲットを復元します。"
+    },
+    "DraggableWindowDeadSpace": {
+        "message": "ウィンドウドラッグ可能領域"
+    },
+    "DraggableWindowDeadSpaceDescription": {
+        "message": "ウィンドウの余白部分をクリックしてドラッグしてウィンドウを移動できるようにします。"
+    },
+    "CastBarAetheryteNames": {
+        "message": "キャストバーにエーテライト名表示"
+    },
+    "CastBarAetheryteNamesDescription": {
+        "message": "アクション'テレポ'の名前を目的地のエーテライト名に置き換えます。"
+    },
+    "BetterInterruptableCastBars": {
+        "message": "改良詠唱中断表示"
+    },
+    "BetterInterruptableCastBarsDescription": {
+        "message": "敵の詠唱中断可能なキャストバーをより目立つようにします。\n\nさらに、詠唱を中断できるスキルがホットバー上に表示されます。"
+    },
+    "PartyList": {
+        "message": "パーティリスト"
+    },
+    "ParameterWidget": {
+        "message": "パラメータウィジェット"
+    },
+    "Extra": {
+        "message": "追加"
+    },
+    "PercentageSign": {
+        "message": "パーセント記号"
+    },
+    "PercentageFormat": {
+        "message": "パーセント形式"
+    },
+    "StyleSettings": {
+        "message": "スタイル設定"
+    },
+    "ShowOnPartyList": {
+        "message": "パーティリストに表示"
+    },
+    "ApplyToPlayer": {
+        "message": "プレイヤーに適用"
+    },
+    "ApplyToPartyMembers": {
+        "message": "パーティメンバーに適用"
+    },
+    "ChangeHP": {
+        "message": "HPを変更"
+    },
+    "ChangeMP": {
+        "message": "MPを変更"
+    },
+    "ChangeGP": {
+        "message": "GPを変更"
+    },
+    "ChangeCP": {
+        "message": "CPを変更"
+    },
+    "ShowOnParameterWidget": {
+        "message": "パラメータウィジェットに表示"
+    },
+    "DeadOrAliveMode": {
+        "message": "戦闘不能・生存モード"
+    },
+    "ShowPercentageSign": {
+        "message": "パーセント記号 % を表示"
+    },
+    "DecimalPlaces": {
+        "message": "小数点以下の桁数"
+    },
+    "ShowDecimalsOnlyBelow100": {
+        "message": "100%未満の場合のみ小数点を表示"
+    },
+    "Alive": {
+        "message": "生存"
+    },
+    "Dead": {
+        "message": "戦闘不能"
+    },
+    "FeatureToggles": {
+        "message": "機能トグル"
+    },
+    "IconSelection": {
+        "message": "アイコン選択"
+    },
+    "TargetCastBarStyleCombined": {
+        "message": "ターゲットキャストバースタイル（統合）"
+    },
+    "TargetCastBarStyleSeparate": {
+        "message": "ターゲットキャストバースタイル（分離）"
+    },
+    "FocusTargetCastBarStyle": {
+        "message": "フォーカスターゲットキャストバースタイル"
+    },
+    "NameplateCastBarStyle": {
+        "message": "ネームプレートキャストバースタイル"
+    },
+    "Special": {
+        "message": "特殊"
+    },
+    "SpeedMultiplier": {
+        "message": "速度倍率"
+    },
+    "ZoneSearch": {
+        "message": "エリア検索"
+    },
+    "GearsetSearch": {
+        "message": "ギアセット検索"
+    },
+    "Position": {
+        "message": "位置"
+    },
+    "AddNewGearsetRedirection": {
+        "message": "新規ギアセットリダイレクトを追加"
+    },
+    "Gearset": {
+        "message": "ギアセット"
+    },
+    "SelectGearset": {
+        "message": "ギアセットを選択"
+    },
+    "Zone": {
+        "message": "エリア"
+    },
+    "SelectZone": {
+        "message": "エリアを選択"
+    },
+    "NothingSelected": {
+        "message": "未選択"
+    },
+    "ModificationTypeDebug": {
+        "message": "デバッグ"
+    },
+    "ModificationTypeCustomNativeWindows": {
+        "message": "カスタムネイティブウィンドウ"
+    },
+    "ModificationTypeUIModification": {
+        "message": "UI改変"
+    },
+    "ModificationTypeGameBehaviorModification": {
+        "message": "ゲーム動作改変"
+    },
+    "ModificationTypeCustomNativeOverlay": {
+        "message": "カスタムネイティブオーバーレイ"
+    }
+}

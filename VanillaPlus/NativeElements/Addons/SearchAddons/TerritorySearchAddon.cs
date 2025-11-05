@@ -11,7 +11,7 @@ public static class TerritorySearchAddon {
         NativeController = System.NativeController,
         Size = new Vector2(350.0f, 600.0f),
         InternalName = "TerritorySearch",
-        Title = "Zone Search",
+        Title = Strings.ZoneSearch,
         SearchOptions = Services.DataManager.GetExcelSheet<TerritoryType>()
             .Where(territory => territory.LoadingImage.RowId is not 0)
             .Where(territory => !territory.PlaceName.Value.Name.ToString().IsNullOrEmpty())
@@ -22,6 +22,7 @@ public static class TerritorySearchAddon {
         GetTexturePathFunc = territory => $"ui/loadingimage/{territory.LoadingImage.Value.FileName}_hr1.tex",
         GetSubLabelFunc = territory => territory.ContentFinderCondition.RowId is 0 ? string.Empty : territory.ContentFinderCondition.Value.Name.ToString(),
 
-        SortingOptions = [ "Alphabetical" , "Id" ],
+        SortingOptions = [ "Alphabetical", "Id" ],
+        // SortingOptions = [ Strings.Alphabetical, Strings.Id ],
     };
 }

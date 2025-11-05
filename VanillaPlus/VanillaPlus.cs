@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Numerics;
+using System.IO;
+using Dalamud;
 using Dalamud.Game.Command;
 using Dalamud.Interface.Windowing;
 using Dalamud.Plugin;
@@ -12,6 +14,10 @@ namespace VanillaPlus;
 public sealed class VanillaPlus : IDalamudPlugin {
     public VanillaPlus(IDalamudPluginInterface pluginInterface) {
         pluginInterface.Create<Services>();
+
+        OnLanguageChanged(pluginInterface.UiLanguage);
+        Services.PluginInterface.LanguageChanged += OnLanguageChanged;
+
         System.SystemConfig = SystemConfiguration.Load();
 
         System.NativeController = new NativeController(pluginInterface);
@@ -19,23 +25,23 @@ public sealed class VanillaPlus : IDalamudPlugin {
         System.AddonModificationBrowser = new AddonModificationBrowser {
             NativeController = System.NativeController,
             InternalName = "VanillaPlusConfig",
-            Title = "Vanilla Plus Modification Browser",
+            Title = Strings.PluginTitle,
             Size = new Vector2(836.0f, 650.0f),
         };
 
         Services.CommandManager.AddHandler("/vanillaplus", new CommandInfo(Handler) {
             DisplayOrder = 1,
             ShowInHelp = true,
-            HelpMessage = "Open Game Modification Browser",
+            HelpMessage = Strings.OpenModificationBrowser,
         });
 
         Services.CommandManager.AddHandler("/plus", new CommandInfo(Handler) {
             DisplayOrder = 2,
             ShowInHelp = true,
-            HelpMessage = "Open Game Modification Browser",
+            HelpMessage = Strings.OpenModificationBrowser,
         });
 
-        System.WindowSystem = new WindowSystem("VanillaPlus");
+        System.WindowSystem = new WindowSystem(Strings.WindowSystemName);
         Services.PluginInterface.UiBuilder.Draw += System.WindowSystem.Draw;
         Services.PluginInterface.UiBuilder.OpenConfigUi += OpenModificationBrowser;
 
@@ -46,6 +52,9 @@ public sealed class VanillaPlus : IDalamudPlugin {
     }
 
     public void Dispose() {
+        // Unregister language change event
+        Services.PluginInterface.LanguageChanged -= OnLanguageChanged;
+
         System.KeyListener.Dispose();
         System.ModificationManager.Dispose();
 
@@ -68,7 +77,7 @@ public sealed class VanillaPlus : IDalamudPlugin {
     [Conditional("DEBUG")]
     private static void AutoOpenBrowser(bool enabled) {
         if (!enabled) return;
-        
+
         System.AddonModificationBrowser.Open();
     }
 
@@ -82,4 +91,11 @@ public sealed class VanillaPlus : IDalamudPlugin {
 
     private void OpenModificationBrowser()
         => System.AddonModificationBrowser.Open();
+
+    private void OnLanguageChanged(string languageCode) {
+        var assemblyLocation = Services.PluginInterface.AssemblyLocation.Directory?.FullName!;
+        var locPrefix = Path.Combine(assemblyLocation, "Localization");
+        var localization = new Localization(locPrefix, "loc_");
+        localization.SetupWithLangCode(languageCode);
+    }
 }

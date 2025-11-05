@@ -13,9 +13,8 @@ namespace VanillaPlus.Features.CurrencyOverlay;
 
 public unsafe class CurrencyOverlay : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Currency Overlay",
-        Description = "Allows you to add additional currencies to your UI Overlay.\n\n" +
-                      "Additionally allows you to set minimum and maximum values to trigger a warning.",
+        DisplayName = Strings.CurrencyOverlay,
+        Description = Strings.CurrencyOverlayDescription,
         Type = ModificationType.NewOverlay,
         Authors = [ "MidoriKami" ],
         ChangeLog = [
@@ -48,7 +47,7 @@ public unsafe class CurrencyOverlay : GameModification {
         itemSearchAddon = new LuminaSearchAddon<Item> {
             NativeController = System.NativeController,
             InternalName = "LuminaItemSearch",
-            Title = "Item Search",
+            Title = Strings.ItemSearch,
             Size = new Vector2(350.0f, 500.0f),
 
             GetLabelFunc = item => item.Name.ToString(),
@@ -56,6 +55,7 @@ public unsafe class CurrencyOverlay : GameModification {
             GetIconIdFunc = item => item.Icon,
 
             SortingOptions = [ "Alphabetical", "Id" ],
+            // SortingOptions = [ Strings.Alphabetical, Strings.Id ],
             SearchOptions = Services.DataManager.GetCurrencyItems().ToList(),
         };
 
@@ -65,8 +65,9 @@ public unsafe class CurrencyOverlay : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(700.0f, 500.0f),
             InternalName = "CurrencyOverlayConfig",
-            Title = "Currency Overlay Config",
+            Title = Strings.CurrencyOverlayConfig,
             SortOptions = [ "Alphabetical" ],
+            // SortOptions = [ Strings.Alphabetical ],
 
             Options = config.Currencies,
 

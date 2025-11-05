@@ -17,8 +17,8 @@ namespace VanillaPlus.Features.EnhancedLootWindow;
 
 public unsafe class EnhancedLootWindow : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Enhanced Loot Window",
-        Description = "Adds indicators to loot window items to indicate if you have unlocked that item before, or if the item is obtainable.",
+        DisplayName = Strings.EnhancedLootWindow,
+        Description = Strings.EnhancedLootWindowDescription,
         Type = ModificationType.UserInterface,
         Authors = ["MidoriKami"],
         ChangeLog = [
@@ -41,13 +41,13 @@ public unsafe class EnhancedLootWindow : GameModification {
         configWindow = new ConfigAddon {
             NativeController = System.NativeController,
             InternalName = "EnhancedLootWindowConfig",
-            Title = "Enhanced Loot Window Config",
+            Title = Strings.EnhancedLootWindowConfig,
             Config = config,
         };
 
-        configWindow.AddCategory("Settings")
-            .AddCheckbox("Mark Unobtainable Items", nameof(config.MarkUnobtainableItems))
-            .AddCheckbox("Mark Already Unlocked Items", nameof(config.MarkAlreadyObtainedItems));
+        configWindow.AddCategory(Strings.Settings)
+            .AddCheckbox(Strings.MarkUnobtainableItems, nameof(config.MarkUnobtainableItems))
+            .AddCheckbox(Strings.MarkAlreadyUnlockedItems, nameof(config.MarkAlreadyObtainedItems));
 
         OpenConfigAction = configWindow.Toggle;
 

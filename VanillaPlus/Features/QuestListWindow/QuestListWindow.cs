@@ -13,8 +13,8 @@ namespace VanillaPlus.Features.QuestListWindow;
 
 public unsafe class QuestListWindow : GameModification {
     public override ModificationInfo ModificationInfo => new() {
-        DisplayName = "Quest List Window",
-        Description = "Displays a list of all available quests for the currently occupied zone.",
+        DisplayName = Strings.QuestListWindow,
+        Description = Strings.QuestListWindowDescription,
         Type = ModificationType.NewWindow,
         Authors = [ "MidoriKami" ],
         ChangeLog = [
@@ -35,7 +35,7 @@ public unsafe class QuestListWindow : GameModification {
             NativeController = System.NativeController,
             Size = new Vector2(300.0f, 400.0f),
             InternalName = "QuestList",
-            Title = "Quest List",
+            Title = Strings.QuestList,
             UpdateListFunction = UpdateList,
             DropDownOptions = [ "Type", "Alphabetically", "Level", "Distance", "Issuer Name", ],
             OnFilterUpdated = OnFilterUpdated,

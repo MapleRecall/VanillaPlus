@@ -33,7 +33,7 @@ public unsafe class NodeListAddon : NativeAddon {
         addonConfigWindow = new AddonConfigAddon {
             NativeController = System.NativeController,
             InternalName = $"{InternalName}Config",
-            Title = $"{InternalName} Configuration Window",
+            Title = $"{Title ?? InternalName} {Strings.ConfigurationWindow}",
             AddonConfig = config,
         };
     }
